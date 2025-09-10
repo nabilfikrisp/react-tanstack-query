@@ -1,51 +1,27 @@
 import { z } from "zod";
 import { metaResponseSchema } from "./response.schema";
 
-const reviewSchema = z.object({
-  rating: z.number(),
-  comment: z.string(),
-  date: z.coerce.date(),
-  reviewerName: z.string(),
-  reviewerEmail: z.email(),
-});
-
-const dimensionsSchema = z.object({
-  width: z.number(),
-  height: z.number(),
-  depth: z.number(),
-});
-
-const metaSchema = z.object({
-  createdAt: z.coerce.date(),
-  updatedAt: z.coerce.date(),
-  barcode: z.string(),
-  qrCode: z.string(),
+const productDetailsSchema = z.object({
+  description: z.string(),
+  stock: z.number().int().nonnegative(),
+  weight: z.string(), // e.g., "495g"
+  dimensions: z.string(), // e.g., "12x9x8 cm"
+  warranty: z.string(), // e.g., "14 months"
 });
 
 const productSchema = z.object({
-  id: z.number(),
-  title: z.string(),
-  description: z.string(),
+  id: z.number().int().positive(),
+  brandId: z.number().int().positive(),
+  name: z.string(),
+  price: z.number().nonnegative(),
+  discountedPrice: z.number().nonnegative().optional(),
+  onSale: z.boolean(),
   category: z.string(),
-  price: z.number(),
-  discountPercentage: z.number(),
-  rating: z.number(),
-  stock: z.string(),
-  tags: z.array(z.string()),
-  brand: z.string().optional(),
-  sku: z.string(),
-  weight: z.number(),
-  dimensions: dimensionsSchema,
-  warrantyInformation: z.string(),
-  shippingInformation: z.string(),
-  availabilityStatus: z.string(),
-  reviews: z.array(reviewSchema),
-  returnPolicy: z.string(),
-  minimumOrderQuantity: z.number(),
-  meta: metaSchema,
-  thumbnail: z.string(),
-  images: z.array(z.string()),
+  rating: z.number().min(0).max(5),
+  image: z.url(),
+  details: productDetailsSchema,
 });
+
 export type Product = z.infer<typeof productSchema>;
 
 export const productsResponseSchema = metaResponseSchema.extend({

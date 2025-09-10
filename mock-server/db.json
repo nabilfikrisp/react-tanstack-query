@@ -1,0 +1,1917 @@
+{
+  "brands": [
+    {
+      "id": 1,
+      "name": "Schuster - Sipes",
+      "country": "Marshall Islands",
+      "founded": 2020,
+      "description": "Intuitive cloud-native framework",
+      "logo": "https://picsum.photos/seed/gqZdV4q/200/200?grayscale&blur=8"
+    },
+    {
+      "id": 2,
+      "name": "Trantow - Rempel",
+      "country": "Morocco",
+      "founded": 1996,
+      "description": "Face to face heuristic adapter",
+      "logo": "https://picsum.photos/seed/k2I3wO/200/200?blur=1"
+    },
+    {
+      "id": 3,
+      "name": "Kuhlman - Goyette",
+      "country": "French Guiana",
+      "founded": 1989,
+      "description": "Sustainable leading edge artificial intelligence",
+      "logo": "https://picsum.photos/seed/64Ln93s/200/200"
+    },
+    {
+      "id": 4,
+      "name": "Grady and Sons",
+      "country": "Azerbaijan",
+      "founded": 2005,
+      "description": "Seamless human-resource orchestration",
+      "logo": "https://picsum.photos/seed/vHG5LqI9/200/200?grayscale&blur=8"
+    },
+    {
+      "id": 5,
+      "name": "Wolff - Morar",
+      "country": "Sweden",
+      "founded": 2013,
+      "description": "Customizable impactful implementation",
+      "logo": "https://picsum.photos/seed/tgaAq9tV9f/200/200?blur=7"
+    },
+    {
+      "id": 6,
+      "name": "Romaguera Group",
+      "country": "Djibouti",
+      "founded": 1998,
+      "description": "Integrated exuding firmware",
+      "logo": "https://picsum.photos/seed/RhrXfYv2V/200/200?blur=9"
+    },
+    {
+      "id": 7,
+      "name": "Yundt Inc",
+      "country": "Botswana",
+      "founded": 1989,
+      "description": "Open-architected asynchronous architecture",
+      "logo": "https://picsum.photos/seed/zYww6nDzzm/200/200?grayscale&blur=7"
+    },
+    {
+      "id": 8,
+      "name": "Yost, Hickle and Crona",
+      "country": "Saint Pierre and Miquelon",
+      "founded": 1982,
+      "description": "Organized asynchronous toolset",
+      "logo": "https://picsum.photos/seed/gDp7slHb/200/200?blur=5"
+    },
+    {
+      "id": 9,
+      "name": "Casper, Prosacco and Hegmann",
+      "country": "Taiwan",
+      "founded": 2001,
+      "description": "Implemented explicit data-warehouse",
+      "logo": "https://picsum.photos/seed/s4DFM8e/200/200?grayscale&blur=6"
+    },
+    {
+      "id": 10,
+      "name": "Vandervort - McGlynn",
+      "country": "Cayman Islands",
+      "founded": 2012,
+      "description": "Advanced intangible installation",
+      "logo": "https://picsum.photos/seed/tqlERt2Uh/200/200?grayscale&blur=9"
+    },
+    {
+      "id": 11,
+      "name": "VonRueden - Harber",
+      "country": "Seychelles",
+      "founded": 2012,
+      "description": "Decentralized system-worthy migration",
+      "logo": "https://picsum.photos/seed/5erST/200/200?blur=6"
+    },
+    {
+      "id": 12,
+      "name": "Oberbrunner - Bruen",
+      "country": "Belgium",
+      "founded": 1989,
+      "description": "Centralized neutral synergy",
+      "logo": "https://picsum.photos/seed/DG0ek/200/200?grayscale&blur=1"
+    },
+    {
+      "id": 13,
+      "name": "Yundt, Ernser and Hickle",
+      "country": "Madagascar",
+      "founded": 1990,
+      "description": "Optional AI-powered leverage",
+      "logo": "https://picsum.photos/seed/9jT2o/200/200?blur=9"
+    },
+    {
+      "id": 14,
+      "name": "Donnelly, Schamberger and Willms",
+      "country": "Montenegro",
+      "founded": 2018,
+      "description": "Open-source asynchronous protocol",
+      "logo": "https://picsum.photos/seed/p8osUmjU/200/200?grayscale&blur=3"
+    },
+    {
+      "id": 15,
+      "name": "Bradtke - Heller",
+      "country": "Argentina",
+      "founded": 1999,
+      "description": "Digitized neutral intranet",
+      "logo": "https://picsum.photos/seed/HtPkX/200/200?blur=1"
+    },
+    {
+      "id": 16,
+      "name": "Watsica, Barrows and Pouros",
+      "country": "Afghanistan",
+      "founded": 1977,
+      "description": "Profound logistical access",
+      "logo": "https://picsum.photos/seed/pmWxscX/200/200?blur=3"
+    },
+    {
+      "id": 17,
+      "name": "Schulist Group",
+      "country": "Gambia",
+      "founded": 1995,
+      "description": "Extended impactful algorithm",
+      "logo": "https://picsum.photos/seed/VuvJoRO/200/200"
+    },
+    {
+      "id": 18,
+      "name": "Marquardt Inc",
+      "country": "Monaco",
+      "founded": 1979,
+      "description": "Managed encompassing circuit",
+      "logo": "https://picsum.photos/seed/ivdpD/200/200?grayscale&blur=3"
+    },
+    {
+      "id": 19,
+      "name": "Bernhard - Durgan",
+      "country": "Greece",
+      "founded": 2012,
+      "description": "Diverse heuristic help-desk",
+      "logo": "https://picsum.photos/seed/Fosxxcq1/200/200?grayscale&blur=9"
+    },
+    {
+      "id": 20,
+      "name": "Satterfield - Halvorson",
+      "country": "Reunion",
+      "founded": 1994,
+      "description": "Customizable regional neural-net",
+      "logo": "https://picsum.photos/seed/QhDAzk8/200/200?blur=10"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "brandId": 17,
+      "name": "Fresh Wooden Sausages",
+      "price": 511.39,
+      "discountedPrice": 337.52,
+      "onSale": true,
+      "category": "Shoes",
+      "rating": 3.2,
+      "image": "https://picsum.photos/seed/NBOZ26s/150/150?blur=7",
+      "details": {
+        "description": "Our savory-inspired Soap brings a taste of luxury to your regular lifestyle",
+        "stock": 189,
+        "weight": "63g",
+        "dimensions": "18x12x5 cm",
+        "warranty": "18 months"
+      }
+    },
+    {
+      "id": 2,
+      "brandId": 13,
+      "name": "Soft Marble Shirt",
+      "price": 721.65,
+      "onSale": false,
+      "category": "Jewelry",
+      "rating": 1.6,
+      "image": "https://picsum.photos/seed/W0bEWR/150/150?blur=1",
+      "details": {
+        "description": "Innovative Sausages featuring outlying technology and Plastic construction",
+        "stock": 159,
+        "weight": "117g",
+        "dimensions": "10x20x4 cm",
+        "warranty": "27 months"
+      }
+    },
+    {
+      "id": 3,
+      "brandId": 11,
+      "name": "Unbranded Concrete Fish",
+      "price": 753.89,
+      "onSale": false,
+      "category": "Jewelry",
+      "rating": 1.5,
+      "image": "https://picsum.photos/seed/mdpGE0GCs/150/150?grayscale&blur=2",
+      "details": {
+        "description": "Incredible Tuna designed with Concrete for fatal performance",
+        "stock": 20,
+        "weight": "59g",
+        "dimensions": "16x5x10 cm",
+        "warranty": "13 months"
+      }
+    },
+    {
+      "id": 4,
+      "brandId": 6,
+      "name": "Unbranded Marble Tuna",
+      "price": 10.39,
+      "onSale": false,
+      "category": "Sports",
+      "rating": 3.7,
+      "image": "https://picsum.photos/seed/NdfDA7r/150/150?blur=6",
+      "details": {
+        "description": "Featuring Uranium-enhanced technology, our Ball offers unparalleled emotional performance",
+        "stock": 121,
+        "weight": "200g",
+        "dimensions": "11x17x4 cm",
+        "warranty": "13 months"
+      }
+    },
+    {
+      "id": 5,
+      "brandId": 9,
+      "name": "Rustic Gold Cheese",
+      "price": 3.89,
+      "discountedPrice": 3.35,
+      "onSale": true,
+      "category": "Jewelry",
+      "rating": 4.8,
+      "image": "https://picsum.photos/seed/8rnvaRoN4y/150/150?grayscale&blur=7",
+      "details": {
+        "description": "Our horse-friendly Cheese ensures key comfort for your pets",
+        "stock": 158,
+        "weight": "466g",
+        "dimensions": "5x10x7 cm",
+        "warranty": "24 months"
+      }
+    },
+    {
+      "id": 6,
+      "brandId": 14,
+      "name": "Fresh Aluminum Bike",
+      "price": 541.86,
+      "onSale": false,
+      "category": "Tools",
+      "rating": 1.7,
+      "image": "https://picsum.photos/seed/zQfKKoujjw/150/150?blur=5",
+      "details": {
+        "description": "Stylish Table designed to make you stand out with memorable looks",
+        "stock": 65,
+        "weight": "371g",
+        "dimensions": "18x5x3 cm",
+        "warranty": "17 months"
+      }
+    },
+    {
+      "id": 7,
+      "brandId": 19,
+      "name": "Sleek Silk Hat",
+      "price": 741.15,
+      "discountedPrice": 607.74,
+      "onSale": true,
+      "category": "Games",
+      "rating": 3.7,
+      "image": "https://picsum.photos/seed/547ncGDKh/150/150?grayscale&blur=3",
+      "details": {
+        "description": "The sleek and shimmering Keyboard comes with maroon LED lighting for smart functionality",
+        "stock": 122,
+        "weight": "477g",
+        "dimensions": "16x16x3 cm",
+        "warranty": "12 months"
+      }
+    },
+    {
+      "id": 8,
+      "brandId": 17,
+      "name": "Generic Wooden Ball",
+      "price": 207.35,
+      "onSale": false,
+      "category": "Home",
+      "rating": 4.3,
+      "image": "https://picsum.photos/seed/iquOBM9Ipc/150/150?blur=5",
+      "details": {
+        "description": "Discover the fish-like agility of our Shirt, perfect for hairy users",
+        "stock": 126,
+        "weight": "99g",
+        "dimensions": "18x9x3 cm",
+        "warranty": "15 months"
+      }
+    },
+    {
+      "id": 9,
+      "brandId": 14,
+      "name": "Fantastic Aluminum Mouse",
+      "price": 471.49,
+      "onSale": false,
+      "category": "Clothing",
+      "rating": 3.1,
+      "image": "https://picsum.photos/seed/DZE2xzgkI/150/150?blur=7",
+      "details": {
+        "description": "Discover the rabbit-like agility of our Keyboard, perfect for monumental users",
+        "stock": 75,
+        "weight": "262g",
+        "dimensions": "11x6x10 cm",
+        "warranty": "29 months"
+      }
+    },
+    {
+      "id": 10,
+      "brandId": 11,
+      "name": "Tasty Gold Pizza",
+      "price": 699.59,
+      "discountedPrice": 398.77,
+      "onSale": true,
+      "category": "Electronics",
+      "rating": 4.2,
+      "image": "https://picsum.photos/seed/XedfJ4Y8jr/150/150?blur=8",
+      "details": {
+        "description": "Handcrafted Car designed with Ceramic for runny performance",
+        "stock": 198,
+        "weight": "438g",
+        "dimensions": "8x20x9 cm",
+        "warranty": "27 months"
+      }
+    },
+    {
+      "id": 11,
+      "brandId": 3,
+      "name": "Tasty Aluminum Towels",
+      "price": 654.35,
+      "onSale": false,
+      "category": "Books",
+      "rating": 3.7,
+      "image": "https://picsum.photos/seed/A8yRq8/150/150?grayscale&blur=10",
+      "details": {
+        "description": "The Carson Bike is the latest in a series of another products from Grimes and Sons",
+        "stock": 28,
+        "weight": "351g",
+        "dimensions": "11x20x5 cm",
+        "warranty": "11 months"
+      }
+    },
+    {
+      "id": 12,
+      "brandId": 3,
+      "name": "Soft Ceramic Ball",
+      "price": 689.19,
+      "discountedPrice": 461.76,
+      "onSale": true,
+      "category": "Health",
+      "rating": 3.7,
+      "image": "https://picsum.photos/seed/XSagNTYA/150/150?blur=2",
+      "details": {
+        "description": "Our panda-friendly Ball ensures nimble comfort for your pets",
+        "stock": 16,
+        "weight": "425g",
+        "dimensions": "19x16x6 cm",
+        "warranty": "14 months"
+      }
+    },
+    {
+      "id": 13,
+      "brandId": 18,
+      "name": "Incredible Gold Sausages",
+      "price": 859.59,
+      "onSale": false,
+      "category": "Kids",
+      "rating": 1.2,
+      "image": "https://picsum.photos/seed/icY33d/150/150?blur=5",
+      "details": {
+        "description": "Professional-grade Soap perfect for juicy training and recreational use",
+        "stock": 129,
+        "weight": "492g",
+        "dimensions": "7x18x10 cm",
+        "warranty": "29 months"
+      }
+    },
+    {
+      "id": 14,
+      "brandId": 9,
+      "name": "Fresh Bronze Cheese",
+      "price": 941.79,
+      "onSale": false,
+      "category": "Grocery",
+      "rating": 5,
+      "image": "https://picsum.photos/seed/4xbiw32kur/150/150?grayscale&blur=9",
+      "details": {
+        "description": "Our koala-friendly Chicken ensures frozen comfort for your pets",
+        "stock": 67,
+        "weight": "367g",
+        "dimensions": "10x15x2 cm",
+        "warranty": "27 months"
+      }
+    },
+    {
+      "id": 15,
+      "brandId": 13,
+      "name": "Tasty Bronze Towels",
+      "price": 264.85,
+      "onSale": false,
+      "category": "Toys",
+      "rating": 1.2,
+      "image": "https://picsum.photos/seed/X7D8Xj/150/150?grayscale&blur=5",
+      "details": {
+        "description": "Discover the jaunty new Chips with an exciting mix of Aluminum ingredients",
+        "stock": 19,
+        "weight": "341g",
+        "dimensions": "7x13x2 cm",
+        "warranty": "10 months"
+      }
+    },
+    {
+      "id": 16,
+      "brandId": 14,
+      "name": "Luxurious Silk Sausages",
+      "price": 10.59,
+      "discountedPrice": 9.64,
+      "onSale": true,
+      "category": "Garden",
+      "rating": 1.3,
+      "image": "https://picsum.photos/seed/dAkfwGUnCy/150/150?grayscale&blur=10",
+      "details": {
+        "description": "Stylish Ball designed to make you stand out with interesting looks",
+        "stock": 98,
+        "weight": "482g",
+        "dimensions": "17x17x3 cm",
+        "warranty": "19 months"
+      }
+    },
+    {
+      "id": 17,
+      "brandId": 20,
+      "name": "Unbranded Marble Pants",
+      "price": 413.39,
+      "discountedPrice": 363.78,
+      "onSale": true,
+      "category": "Garden",
+      "rating": 4.8,
+      "image": "https://picsum.photos/seed/b5HOwJ/150/150?grayscale&blur=6",
+      "details": {
+        "description": "The Programmable coherent ability Shoes offers reliable performance and good design",
+        "stock": 66,
+        "weight": "428g",
+        "dimensions": "14x9x10 cm",
+        "warranty": "9 months"
+      }
+    },
+    {
+      "id": 18,
+      "brandId": 2,
+      "name": "Generic Wooden Chips",
+      "price": 647.15,
+      "onSale": false,
+      "category": "Tools",
+      "rating": 1.3,
+      "image": "https://picsum.photos/seed/sihl7nw/150/150?grayscale&blur=4",
+      "details": {
+        "description": "New Ball model with 91 GB RAM, 807 GB storage, and voluminous features",
+        "stock": 149,
+        "weight": "175g",
+        "dimensions": "15x18x6 cm",
+        "warranty": "26 months"
+      }
+    },
+    {
+      "id": 19,
+      "brandId": 6,
+      "name": "Bespoke Ceramic Mouse",
+      "price": 670.65,
+      "onSale": false,
+      "category": "Toys",
+      "rating": 2.2,
+      "image": "https://picsum.photos/seed/Zk2kG9Z2/150/150?blur=4",
+      "details": {
+        "description": "Stylish Car designed to make you stand out with downright looks",
+        "stock": 121,
+        "weight": "450g",
+        "dimensions": "8x16x5 cm",
+        "warranty": "7 months"
+      }
+    },
+    {
+      "id": 20,
+      "brandId": 6,
+      "name": "Frozen Steel Sausages",
+      "price": 437.45,
+      "discountedPrice": 319.34,
+      "onSale": true,
+      "category": "Home",
+      "rating": 3.4,
+      "image": "https://picsum.photos/seed/Z2rwS5Bk2/150/150?grayscale&blur=5",
+      "details": {
+        "description": "Ergonomic Bacon made with Steel for all-day prickly support",
+        "stock": 128,
+        "weight": "174g",
+        "dimensions": "15x17x5 cm",
+        "warranty": "10 months"
+      }
+    },
+    {
+      "id": 21,
+      "brandId": 16,
+      "name": "Unbranded Marble Sausages",
+      "price": 457.11,
+      "discountedPrice": 342.83,
+      "onSale": true,
+      "category": "Games",
+      "rating": 2.8,
+      "image": "https://picsum.photos/seed/tQzwtvy/150/150?blur=9",
+      "details": {
+        "description": "Introducing the Fiji-inspired Gloves, blending unfortunate style with local craftsmanship",
+        "stock": 150,
+        "weight": "454g",
+        "dimensions": "18x16x2 cm",
+        "warranty": "6 months"
+      }
+    },
+    {
+      "id": 22,
+      "brandId": 1,
+      "name": "Generic Wooden Cheese",
+      "price": 211.59,
+      "discountedPrice": 188.32,
+      "onSale": true,
+      "category": "Tools",
+      "rating": 2.1,
+      "image": "https://picsum.photos/seed/Ov13S9KIP/150/150?blur=3",
+      "details": {
+        "description": "Professional-grade Soap perfect for fussy training and recreational use",
+        "stock": 79,
+        "weight": "433g",
+        "dimensions": "15x17x2 cm",
+        "warranty": "23 months"
+      }
+    },
+    {
+      "id": 23,
+      "brandId": 15,
+      "name": "Gorgeous Gold Soap",
+      "price": 875.35,
+      "onSale": false,
+      "category": "Toys",
+      "rating": 4.6,
+      "image": "https://picsum.photos/seed/k0auJ3e/150/150?blur=7",
+      "details": {
+        "description": "Experience the red brilliance of our Mouse, perfect for super environments",
+        "stock": 69,
+        "weight": "357g",
+        "dimensions": "7x17x3 cm",
+        "warranty": "9 months"
+      }
+    },
+    {
+      "id": 24,
+      "brandId": 9,
+      "name": "Handmade Cotton Chips",
+      "price": 598.95,
+      "onSale": false,
+      "category": "Movies",
+      "rating": 4.5,
+      "image": "https://picsum.photos/seed/xYhkyYJ/150/150?grayscale&blur=5",
+      "details": {
+        "description": "Featuring Darmstadtium-enhanced technology, our Car offers unparalleled feline performance",
+        "stock": 24,
+        "weight": "272g",
+        "dimensions": "14x11x2 cm",
+        "warranty": "27 months"
+      }
+    },
+    {
+      "id": 25,
+      "brandId": 6,
+      "name": "Tasty Granite Pants",
+      "price": 114.14,
+      "onSale": false,
+      "category": "Baby",
+      "rating": 1.8,
+      "image": "https://picsum.photos/seed/UPfW5jPP/150/150?grayscale&blur=6",
+      "details": {
+        "description": "The sleek and mundane Tuna comes with gold LED lighting for smart functionality",
+        "stock": 20,
+        "weight": "80g",
+        "dimensions": "8x9x7 cm",
+        "warranty": "35 months"
+      }
+    },
+    {
+      "id": 26,
+      "brandId": 20,
+      "name": "Tasty Aluminum Computer",
+      "price": 20.65,
+      "discountedPrice": 17.76,
+      "onSale": true,
+      "category": "Beauty",
+      "rating": 1.7,
+      "image": "https://picsum.photos/seed/nIvgh9/150/150?blur=2",
+      "details": {
+        "description": "Generic Ball designed with Metal for glass performance",
+        "stock": 49,
+        "weight": "327g",
+        "dimensions": "7x18x5 cm",
+        "warranty": "13 months"
+      }
+    },
+    {
+      "id": 27,
+      "brandId": 14,
+      "name": "Tasty Aluminum Gloves",
+      "price": 831.7,
+      "onSale": false,
+      "category": "Shoes",
+      "rating": 4.3,
+      "image": "https://picsum.photos/seed/Hjw7bg/150/150?grayscale&blur=1",
+      "details": {
+        "description": "Luxurious Sausages designed with Steel for juvenile performance",
+        "stock": 143,
+        "weight": "496g",
+        "dimensions": "18x15x3 cm",
+        "warranty": "36 months"
+      }
+    },
+    {
+      "id": 28,
+      "brandId": 9,
+      "name": "Refined Granite Table",
+      "price": 808.5,
+      "onSale": false,
+      "category": "Movies",
+      "rating": 2.9,
+      "image": "https://picsum.photos/seed/8eFbdt/150/150?blur=1",
+      "details": {
+        "description": "Professional-grade Soap perfect for worthy training and recreational use",
+        "stock": 171,
+        "weight": "158g",
+        "dimensions": "14x16x2 cm",
+        "warranty": "35 months"
+      }
+    },
+    {
+      "id": 29,
+      "brandId": 8,
+      "name": "Rustic Gold Pizza",
+      "price": 598.65,
+      "discountedPrice": 395.11,
+      "onSale": true,
+      "category": "Clothing",
+      "rating": 1,
+      "image": "https://picsum.photos/seed/dKaUzRDSX/150/150?grayscale&blur=1",
+      "details": {
+        "description": "Stylish Fish designed to make you stand out with dapper looks",
+        "stock": 141,
+        "weight": "111g",
+        "dimensions": "16x9x6 cm",
+        "warranty": "9 months"
+      }
+    },
+    {
+      "id": 30,
+      "brandId": 12,
+      "name": "Rustic Wooden Pants",
+      "price": 534.25,
+      "discountedPrice": 379.32,
+      "onSale": true,
+      "category": "Movies",
+      "rating": 4,
+      "image": "https://picsum.photos/seed/KvPVNmWO6e/150/150?blur=1",
+      "details": {
+        "description": "Discover the bird-like agility of our Tuna, perfect for pure users",
+        "stock": 153,
+        "weight": "277g",
+        "dimensions": "11x5x7 cm",
+        "warranty": "35 months"
+      }
+    },
+    {
+      "id": 31,
+      "brandId": 16,
+      "name": "Small Aluminum Bacon",
+      "price": 734.69,
+      "discountedPrice": 396.73,
+      "onSale": true,
+      "category": "Shoes",
+      "rating": 2.5,
+      "image": "https://picsum.photos/seed/tsA8rjT62/150/150?grayscale&blur=3",
+      "details": {
+        "description": "Discover the oddball new Keyboard with an exciting mix of Aluminum ingredients",
+        "stock": 102,
+        "weight": "222g",
+        "dimensions": "19x14x8 cm",
+        "warranty": "27 months"
+      }
+    },
+    {
+      "id": 32,
+      "brandId": 1,
+      "name": "Fantastic Marble Chicken",
+      "price": 40.19,
+      "onSale": false,
+      "category": "Baby",
+      "rating": 2.7,
+      "image": "https://picsum.photos/seed/0CyRVXNC/150/150?blur=10",
+      "details": {
+        "description": "The Waylon Pizza is the latest in a series of smart products from Monahan LLC",
+        "stock": 143,
+        "weight": "378g",
+        "dimensions": "15x19x6 cm",
+        "warranty": "9 months"
+      }
+    },
+    {
+      "id": 33,
+      "brandId": 5,
+      "name": "Bespoke Gold Chips",
+      "price": 469.39,
+      "discountedPrice": 319.19,
+      "onSale": true,
+      "category": "Sports",
+      "rating": 3.7,
+      "image": "https://picsum.photos/seed/1Xo9BIOI/150/150?grayscale&blur=4",
+      "details": {
+        "description": "Ergonomic Computer made with Ceramic for all-day murky support",
+        "stock": 149,
+        "weight": "267g",
+        "dimensions": "6x11x3 cm",
+        "warranty": "33 months"
+      }
+    },
+    {
+      "id": 34,
+      "brandId": 3,
+      "name": "Intelligent Granite Ball",
+      "price": 50.99,
+      "onSale": false,
+      "category": "Industrial",
+      "rating": 1.6,
+      "image": "https://picsum.photos/seed/FemiWM/150/150?grayscale&blur=10",
+      "details": {
+        "description": "New orange Chair with ergonomic design for possible comfort",
+        "stock": 172,
+        "weight": "156g",
+        "dimensions": "17x6x7 cm",
+        "warranty": "9 months"
+      }
+    },
+    {
+      "id": 35,
+      "brandId": 7,
+      "name": "Practical Cotton Towels",
+      "price": 392.79,
+      "discountedPrice": 290.66,
+      "onSale": true,
+      "category": "Outdoors",
+      "rating": 3.6,
+      "image": "https://picsum.photos/seed/ZGEj92/150/150?grayscale&blur=3",
+      "details": {
+        "description": "The silver Mouse combines Slovakia aesthetics with Potassium-based durability",
+        "stock": 159,
+        "weight": "215g",
+        "dimensions": "19x5x6 cm",
+        "warranty": "23 months"
+      }
+    },
+    {
+      "id": 36,
+      "brandId": 14,
+      "name": "Small Wooden Shoes",
+      "price": 537.91,
+      "onSale": false,
+      "category": "Toys",
+      "rating": 4.4,
+      "image": "https://picsum.photos/seed/veXMiv/150/150?grayscale&blur=7",
+      "details": {
+        "description": "Our crunchy-inspired Keyboard brings a taste of luxury to your flowery lifestyle",
+        "stock": 175,
+        "weight": "104g",
+        "dimensions": "15x20x8 cm",
+        "warranty": "32 months"
+      }
+    },
+    {
+      "id": 37,
+      "brandId": 13,
+      "name": "Gorgeous Aluminum Bacon",
+      "price": 648.7,
+      "discountedPrice": 350.3,
+      "onSale": true,
+      "category": "Computers",
+      "rating": 1.3,
+      "image": "https://picsum.photos/seed/5rAV9L/150/150?grayscale&blur=1",
+      "details": {
+        "description": "The orange Towels combines Timor-Leste aesthetics with Calcium-based durability",
+        "stock": 15,
+        "weight": "98g",
+        "dimensions": "20x14x6 cm",
+        "warranty": "9 months"
+      }
+    },
+    {
+      "id": 38,
+      "brandId": 9,
+      "name": "Gorgeous Granite Table",
+      "price": 693.19,
+      "discountedPrice": 408.98,
+      "onSale": true,
+      "category": "Kids",
+      "rating": 2.5,
+      "image": "https://picsum.photos/seed/P2Ciypo/150/150?blur=10",
+      "details": {
+        "description": "Discover the outgoing new Tuna with an exciting mix of Bronze ingredients",
+        "stock": 19,
+        "weight": "93g",
+        "dimensions": "18x6x10 cm",
+        "warranty": "35 months"
+      }
+    },
+    {
+      "id": 39,
+      "brandId": 3,
+      "name": "Gorgeous Cotton Hat",
+      "price": 95.99,
+      "onSale": false,
+      "category": "Clothing",
+      "rating": 2.2,
+      "image": "https://picsum.photos/seed/HuYnyux/150/150?blur=7",
+      "details": {
+        "description": "Discover the horse-like agility of our Computer, perfect for austere users",
+        "stock": 162,
+        "weight": "473g",
+        "dimensions": "17x18x2 cm",
+        "warranty": "21 months"
+      }
+    },
+    {
+      "id": 40,
+      "brandId": 5,
+      "name": "Generic Ceramic Towels",
+      "price": 812.9,
+      "discountedPrice": 422.71,
+      "onSale": true,
+      "category": "Outdoors",
+      "rating": 1.4,
+      "image": "https://picsum.photos/seed/vKpaQ8m/150/150?blur=4",
+      "details": {
+        "description": "Our spicy-inspired Bacon brings a taste of luxury to your junior lifestyle",
+        "stock": 98,
+        "weight": "248g",
+        "dimensions": "13x16x6 cm",
+        "warranty": "12 months"
+      }
+    },
+    {
+      "id": 41,
+      "brandId": 15,
+      "name": "Oriental Granite Fish",
+      "price": 924.16,
+      "discountedPrice": 600.7,
+      "onSale": true,
+      "category": "Baby",
+      "rating": 3.5,
+      "image": "https://picsum.photos/seed/YrQPh/150/150?grayscale",
+      "details": {
+        "description": "The Lester Pizza is the latest in a series of graceful products from Bode LLC",
+        "stock": 44,
+        "weight": "295g",
+        "dimensions": "10x6x9 cm",
+        "warranty": "28 months"
+      }
+    },
+    {
+      "id": 42,
+      "brandId": 19,
+      "name": "Awesome Plastic Mouse",
+      "price": 429.15,
+      "discountedPrice": 231.74,
+      "onSale": true,
+      "category": "Health",
+      "rating": 1.1,
+      "image": "https://picsum.photos/seed/NC03S3l/150/150",
+      "details": {
+        "description": "Introducing the Saint Pierre and Miquelon-inspired Tuna, blending orange style with local craftsmanship",
+        "stock": 63,
+        "weight": "124g",
+        "dimensions": "11x13x8 cm",
+        "warranty": "11 months"
+      }
+    },
+    {
+      "id": 43,
+      "brandId": 19,
+      "name": "Electronic Rubber Chips",
+      "price": 117.29,
+      "discountedPrice": 60.99,
+      "onSale": true,
+      "category": "Electronics",
+      "rating": 3.8,
+      "image": "https://picsum.photos/seed/XtM0MMtf/150/150?grayscale&blur=1",
+      "details": {
+        "description": "Savor the crispy essence in our Chicken, designed for jealous culinary adventures",
+        "stock": 155,
+        "weight": "444g",
+        "dimensions": "20x10x9 cm",
+        "warranty": "21 months"
+      }
+    },
+    {
+      "id": 44,
+      "brandId": 2,
+      "name": "Licensed Aluminum Shoes",
+      "price": 432.25,
+      "discountedPrice": 259.35,
+      "onSale": true,
+      "category": "Beauty",
+      "rating": 2.1,
+      "image": "https://picsum.photos/seed/flWk5Wq/150/150?grayscale&blur=8",
+      "details": {
+        "description": "Stylish Chair designed to make you stand out with pleasing looks",
+        "stock": 85,
+        "weight": "216g",
+        "dimensions": "19x7x10 cm",
+        "warranty": "10 months"
+      }
+    },
+    {
+      "id": 45,
+      "brandId": 6,
+      "name": "Modern Marble Table",
+      "price": 604.95,
+      "discountedPrice": 441.61,
+      "onSale": true,
+      "category": "Kids",
+      "rating": 1.4,
+      "image": "https://picsum.photos/seed/5XgUm0stG2/150/150?grayscale&blur=4",
+      "details": {
+        "description": "Our crocodile-friendly Keyboard ensures emotional comfort for your pets",
+        "stock": 112,
+        "weight": "255g",
+        "dimensions": "20x9x8 cm",
+        "warranty": "26 months"
+      }
+    },
+    {
+      "id": 46,
+      "brandId": 13,
+      "name": "Small Bamboo Pants",
+      "price": 722.09,
+      "discountedPrice": 671.54,
+      "onSale": true,
+      "category": "Shoes",
+      "rating": 1.1,
+      "image": "https://picsum.photos/seed/LqC0kVVN/150/150?blur=8",
+      "details": {
+        "description": "Discover the knowledgeable new Fish with an exciting mix of Plastic ingredients",
+        "stock": 66,
+        "weight": "335g",
+        "dimensions": "11x16x7 cm",
+        "warranty": "24 months"
+      }
+    },
+    {
+      "id": 47,
+      "brandId": 11,
+      "name": "Unbranded Cotton Pants",
+      "price": 15.79,
+      "onSale": false,
+      "category": "Kids",
+      "rating": 5,
+      "image": "https://picsum.photos/seed/B6EFkqZJ/150/150?grayscale&blur=5",
+      "details": {
+        "description": "Ergonomic Hat made with Steel for all-day upright support",
+        "stock": 20,
+        "weight": "433g",
+        "dimensions": "12x10x10 cm",
+        "warranty": "22 months"
+      }
+    },
+    {
+      "id": 48,
+      "brandId": 9,
+      "name": "Handmade Wooden Salad",
+      "price": 806.79,
+      "discountedPrice": 613.16,
+      "onSale": true,
+      "category": "Electronics",
+      "rating": 2.3,
+      "image": "https://picsum.photos/seed/nHaaF2/150/150?blur=10",
+      "details": {
+        "description": "Savor the sour essence in our Shirt, designed for descriptive culinary adventures",
+        "stock": 23,
+        "weight": "119g",
+        "dimensions": "13x10x2 cm",
+        "warranty": "16 months"
+      }
+    },
+    {
+      "id": 49,
+      "brandId": 17,
+      "name": "Elegant Bamboo Fish",
+      "price": 56.15,
+      "onSale": false,
+      "category": "Books",
+      "rating": 1.3,
+      "image": "https://picsum.photos/seed/GGWsNKA/150/150?blur=2",
+      "details": {
+        "description": "Stylish Chair designed to make you stand out with pale looks",
+        "stock": 37,
+        "weight": "104g",
+        "dimensions": "20x18x9 cm",
+        "warranty": "13 months"
+      }
+    },
+    {
+      "id": 50,
+      "brandId": 20,
+      "name": "Bespoke Bronze Chair",
+      "price": 135.85,
+      "onSale": false,
+      "category": "Computers",
+      "rating": 1.9,
+      "image": "https://picsum.photos/seed/9yWU2QY/150/150?blur=8",
+      "details": {
+        "description": "Featuring Antimony-enhanced technology, our Towels offers unparalleled realistic performance",
+        "stock": 28,
+        "weight": "482g",
+        "dimensions": "20x10x4 cm",
+        "warranty": "35 months"
+      }
+    },
+    {
+      "id": 51,
+      "brandId": 14,
+      "name": "Small Bronze Cheese",
+      "price": 704.85,
+      "discountedPrice": 352.43,
+      "onSale": true,
+      "category": "Grocery",
+      "rating": 3.9,
+      "image": "https://picsum.photos/seed/DKribu/150/150?blur=10",
+      "details": {
+        "description": "The Daisha Sausages is the latest in a series of major products from Hansen - Williamson",
+        "stock": 128,
+        "weight": "84g",
+        "dimensions": "17x14x9 cm",
+        "warranty": "30 months"
+      }
+    },
+    {
+      "id": 52,
+      "brandId": 14,
+      "name": "Tasty Marble Table",
+      "price": 951.95,
+      "discountedPrice": 780.6,
+      "onSale": true,
+      "category": "Beauty",
+      "rating": 3.4,
+      "image": "https://picsum.photos/seed/0TD6a7/150/150?blur=2",
+      "details": {
+        "description": "Savor the crispy essence in our Sausages, designed for naughty culinary adventures",
+        "stock": 76,
+        "weight": "141g",
+        "dimensions": "20x13x3 cm",
+        "warranty": "32 months"
+      }
+    },
+    {
+      "id": 53,
+      "brandId": 7,
+      "name": "Licensed Metal Salad",
+      "price": 505,
+      "discountedPrice": 479.75,
+      "onSale": true,
+      "category": "Kids",
+      "rating": 1.2,
+      "image": "https://picsum.photos/seed/EPt47xuV/150/150?grayscale&blur=8",
+      "details": {
+        "description": "Innovative Tuna featuring illustrious technology and Ceramic construction",
+        "stock": 181,
+        "weight": "383g",
+        "dimensions": "16x19x10 cm",
+        "warranty": "30 months"
+      }
+    },
+    {
+      "id": 54,
+      "brandId": 13,
+      "name": "Generic Wooden Shoes",
+      "price": 349.29,
+      "onSale": false,
+      "category": "Computers",
+      "rating": 2.9,
+      "image": "https://picsum.photos/seed/wFSY3J9/150/150?blur=4",
+      "details": {
+        "description": "Buckridge - Greenholt's most advanced Towels technology increases fond capabilities",
+        "stock": 93,
+        "weight": "426g",
+        "dimensions": "15x10x9 cm",
+        "warranty": "19 months"
+      }
+    },
+    {
+      "id": 55,
+      "brandId": 4,
+      "name": "Fantastic Ceramic Car",
+      "price": 479.29,
+      "onSale": false,
+      "category": "Toys",
+      "rating": 3.2,
+      "image": "https://picsum.photos/seed/A7m7RW/150/150",
+      "details": {
+        "description": "Handmade Gloves designed with Rubber for far-off performance",
+        "stock": 79,
+        "weight": "129g",
+        "dimensions": "19x20x8 cm",
+        "warranty": "23 months"
+      }
+    },
+    {
+      "id": 56,
+      "brandId": 17,
+      "name": "Refined Rubber Shirt",
+      "price": 395.65,
+      "discountedPrice": 253.22,
+      "onSale": true,
+      "category": "Jewelry",
+      "rating": 4.7,
+      "image": "https://picsum.photos/seed/Vw04L1/150/150?blur=3",
+      "details": {
+        "description": "New Shoes model with 10 GB RAM, 8 GB storage, and sudden features",
+        "stock": 90,
+        "weight": "201g",
+        "dimensions": "19x16x4 cm",
+        "warranty": "29 months"
+      }
+    },
+    {
+      "id": 57,
+      "brandId": 14,
+      "name": "Generic Ceramic Fish",
+      "price": 40.81,
+      "discountedPrice": 33.87,
+      "onSale": true,
+      "category": "Home",
+      "rating": 1.1,
+      "image": "https://picsum.photos/seed/zCOqHeyqdH/150/150?blur=6",
+      "details": {
+        "description": "Stylish Salad designed to make you stand out with rewarding looks",
+        "stock": 30,
+        "weight": "401g",
+        "dimensions": "7x19x10 cm",
+        "warranty": "36 months"
+      }
+    },
+    {
+      "id": 58,
+      "brandId": 13,
+      "name": "Bespoke Wooden Bacon",
+      "price": 990.45,
+      "onSale": false,
+      "category": "Games",
+      "rating": 3.8,
+      "image": "https://picsum.photos/seed/a8a2c/150/150?blur=7",
+      "details": {
+        "description": "Stylish Car designed to make you stand out with free looks",
+        "stock": 29,
+        "weight": "464g",
+        "dimensions": "17x18x8 cm",
+        "warranty": "9 months"
+      }
+    },
+    {
+      "id": 59,
+      "brandId": 14,
+      "name": "Generic Plastic Soap",
+      "price": 313.05,
+      "discountedPrice": 244.18,
+      "onSale": true,
+      "category": "Movies",
+      "rating": 4.1,
+      "image": "https://picsum.photos/seed/ci0tu/150/150?blur=10",
+      "details": {
+        "description": "Haag - Zemlak's most advanced Fish technology increases punctual capabilities",
+        "stock": 147,
+        "weight": "178g",
+        "dimensions": "13x13x8 cm",
+        "warranty": "13 months"
+      }
+    },
+    {
+      "id": 60,
+      "brandId": 4,
+      "name": "Modern Cotton Pants",
+      "price": 14.19,
+      "onSale": false,
+      "category": "Grocery",
+      "rating": 3.1,
+      "image": "https://picsum.photos/seed/gWZOEUR/150/150?grayscale",
+      "details": {
+        "description": "Our gorilla-friendly Chips ensures necessary comfort for your pets",
+        "stock": 156,
+        "weight": "360g",
+        "dimensions": "7x8x4 cm",
+        "warranty": "36 months"
+      }
+    },
+    {
+      "id": 61,
+      "brandId": 4,
+      "name": "Luxurious Concrete Towels",
+      "price": 326.09,
+      "discountedPrice": 251.09,
+      "onSale": true,
+      "category": "Grocery",
+      "rating": 3.8,
+      "image": "https://picsum.photos/seed/uvGaas7u/150/150?grayscale&blur=9",
+      "details": {
+        "description": "Discover the which new Chicken with an exciting mix of Marble ingredients",
+        "stock": 125,
+        "weight": "439g",
+        "dimensions": "7x16x3 cm",
+        "warranty": "23 months"
+      }
+    },
+    {
+      "id": 62,
+      "brandId": 12,
+      "name": "Tasty Ceramic Salad",
+      "price": 177.69,
+      "onSale": false,
+      "category": "Garden",
+      "rating": 4.3,
+      "image": "https://picsum.photos/seed/zEnpXRm/150/150?blur=10",
+      "details": {
+        "description": "Experience the silver brilliance of our Car, perfect for unused environments",
+        "stock": 101,
+        "weight": "370g",
+        "dimensions": "8x7x6 cm",
+        "warranty": "22 months"
+      }
+    },
+    {
+      "id": 63,
+      "brandId": 12,
+      "name": "Refined Wooden Gloves",
+      "price": 562.25,
+      "discountedPrice": 427.31,
+      "onSale": true,
+      "category": "Computers",
+      "rating": 3.4,
+      "image": "https://picsum.photos/seed/QpQK4BP4d/150/150?grayscale&blur=7",
+      "details": {
+        "description": "Savor the golden essence in our Ball, designed for messy culinary adventures",
+        "stock": 134,
+        "weight": "265g",
+        "dimensions": "14x9x7 cm",
+        "warranty": "20 months"
+      }
+    },
+    {
+      "id": 64,
+      "brandId": 18,
+      "name": "Luxurious Wooden Chair",
+      "price": 338.55,
+      "discountedPrice": 284.38,
+      "onSale": true,
+      "category": "Garden",
+      "rating": 3,
+      "image": "https://picsum.photos/seed/Qo4gK7dSLS/150/150?blur=3",
+      "details": {
+        "description": "The Operative uniform knowledge base Chicken offers reliable performance and unused design",
+        "stock": 11,
+        "weight": "105g",
+        "dimensions": "8x10x5 cm",
+        "warranty": "14 months"
+      }
+    },
+    {
+      "id": 65,
+      "brandId": 5,
+      "name": "Generic Marble Chair",
+      "price": 309.99,
+      "discountedPrice": 216.99,
+      "onSale": true,
+      "category": "Home",
+      "rating": 1,
+      "image": "https://picsum.photos/seed/UAPHfGgNeH/150/150?grayscale",
+      "details": {
+        "description": "Stylish Cheese designed to make you stand out with baggy looks",
+        "stock": 188,
+        "weight": "266g",
+        "dimensions": "13x15x8 cm",
+        "warranty": "17 months"
+      }
+    },
+    {
+      "id": 66,
+      "brandId": 17,
+      "name": "Gorgeous Silk Chips",
+      "price": 524.99,
+      "onSale": false,
+      "category": "Games",
+      "rating": 4,
+      "image": "https://picsum.photos/seed/pUoDtbWqXq/150/150?blur=8",
+      "details": {
+        "description": "Ergonomic Keyboard made with Rubber for all-day magnificent support",
+        "stock": 199,
+        "weight": "234g",
+        "dimensions": "20x13x3 cm",
+        "warranty": "20 months"
+      }
+    },
+    {
+      "id": 67,
+      "brandId": 11,
+      "name": "Small Silk Shirt",
+      "price": 329.4,
+      "onSale": false,
+      "category": "Beauty",
+      "rating": 4.3,
+      "image": "https://picsum.photos/seed/jbWt4YH/150/150?grayscale&blur=7",
+      "details": {
+        "description": "Experience the lime brilliance of our Tuna, perfect for jagged environments",
+        "stock": 41,
+        "weight": "347g",
+        "dimensions": "6x13x3 cm",
+        "warranty": "18 months"
+      }
+    },
+    {
+      "id": 68,
+      "brandId": 17,
+      "name": "Small Silk Fish",
+      "price": 501.59,
+      "onSale": false,
+      "category": "Tools",
+      "rating": 4.9,
+      "image": "https://picsum.photos/seed/pWZ9Vcb0/150/150?blur=5",
+      "details": {
+        "description": "New lavender Bike with ergonomic design for striking comfort",
+        "stock": 9,
+        "weight": "112g",
+        "dimensions": "16x10x2 cm",
+        "warranty": "6 months"
+      }
+    },
+    {
+      "id": 69,
+      "brandId": 20,
+      "name": "Small Plastic Mouse",
+      "price": 563.29,
+      "onSale": false,
+      "category": "Computers",
+      "rating": 3.7,
+      "image": "https://picsum.photos/seed/LpH5rITPl/150/150?blur=7",
+      "details": {
+        "description": "Stylish Table designed to make you stand out with realistic looks",
+        "stock": 114,
+        "weight": "414g",
+        "dimensions": "12x13x7 cm",
+        "warranty": "21 months"
+      }
+    },
+    {
+      "id": 70,
+      "brandId": 20,
+      "name": "Sleek Bronze Shoes",
+      "price": 398.89,
+      "onSale": false,
+      "category": "Health",
+      "rating": 3,
+      "image": "https://picsum.photos/seed/4Y7J9/150/150?blur=4",
+      "details": {
+        "description": "Gleason, Stark and Yundt's most advanced Sausages technology increases astonishing capabilities",
+        "stock": 97,
+        "weight": "283g",
+        "dimensions": "13x20x8 cm",
+        "warranty": "27 months"
+      }
+    },
+    {
+      "id": 71,
+      "brandId": 15,
+      "name": "Bespoke Plastic Fish",
+      "price": 764.59,
+      "onSale": false,
+      "category": "Garden",
+      "rating": 2.2,
+      "image": "https://picsum.photos/seed/majiYSt/150/150?blur=8",
+      "details": {
+        "description": "New orchid Gloves with ergonomic design for mixed comfort",
+        "stock": 95,
+        "weight": "322g",
+        "dimensions": "5x12x3 cm",
+        "warranty": "22 months"
+      }
+    },
+    {
+      "id": 72,
+      "brandId": 17,
+      "name": "Frozen Gold Chair",
+      "price": 797.99,
+      "onSale": false,
+      "category": "Baby",
+      "rating": 2.2,
+      "image": "https://picsum.photos/seed/Pjh6xx2/150/150?blur=2",
+      "details": {
+        "description": "The Dewayne Chips is the latest in a series of secret products from Hoppe - Schroeder",
+        "stock": 109,
+        "weight": "232g",
+        "dimensions": "18x10x3 cm",
+        "warranty": "32 months"
+      }
+    },
+    {
+      "id": 73,
+      "brandId": 8,
+      "name": "Licensed Silk Bacon",
+      "price": 45.59,
+      "onSale": false,
+      "category": "Baby",
+      "rating": 2.9,
+      "image": "https://picsum.photos/seed/fIbgJ2YiB/150/150?grayscale&blur=9",
+      "details": {
+        "description": "Discover the cluttered new Mouse with an exciting mix of Cotton ingredients",
+        "stock": 95,
+        "weight": "261g",
+        "dimensions": "8x17x2 cm",
+        "warranty": "14 months"
+      }
+    },
+    {
+      "id": 74,
+      "brandId": 1,
+      "name": "Sleek Ceramic Soap",
+      "price": 237.2,
+      "onSale": false,
+      "category": "Games",
+      "rating": 2.5,
+      "image": "https://picsum.photos/seed/WMgrsG6/150/150?grayscale&blur=9",
+      "details": {
+        "description": "Stylish Fish designed to make you stand out with magnificent looks",
+        "stock": 107,
+        "weight": "490g",
+        "dimensions": "17x18x4 cm",
+        "warranty": "16 months"
+      }
+    },
+    {
+      "id": 75,
+      "brandId": 14,
+      "name": "Elegant Wooden Gloves",
+      "price": 807.75,
+      "discountedPrice": 411.95,
+      "onSale": true,
+      "category": "Industrial",
+      "rating": 1.7,
+      "image": "https://picsum.photos/seed/YXPQcU0m/150/150?blur=5",
+      "details": {
+        "description": "Featuring Sulfur-enhanced technology, our Keyboard offers unparalleled far-off performance",
+        "stock": 60,
+        "weight": "178g",
+        "dimensions": "12x12x2 cm",
+        "warranty": "28 months"
+      }
+    },
+    {
+      "id": 76,
+      "brandId": 12,
+      "name": "Handmade Cotton Shoes",
+      "price": 845.09,
+      "discountedPrice": 718.33,
+      "onSale": true,
+      "category": "Movies",
+      "rating": 1,
+      "image": "https://picsum.photos/seed/cf8kJn4ofr/150/150?grayscale&blur=9",
+      "details": {
+        "description": "New olive Pants with ergonomic design for shrill comfort",
+        "stock": 123,
+        "weight": "295g",
+        "dimensions": "13x12x4 cm",
+        "warranty": "19 months"
+      }
+    },
+    {
+      "id": 77,
+      "brandId": 7,
+      "name": "Unbranded Steel Towels",
+      "price": 482.29,
+      "onSale": false,
+      "category": "Toys",
+      "rating": 3,
+      "image": "https://picsum.photos/seed/wFTWyWU2/150/150?grayscale&blur=7",
+      "details": {
+        "description": "The Andres Hat is the latest in a series of willing products from Denesik - Schuppe",
+        "stock": 23,
+        "weight": "372g",
+        "dimensions": "15x16x5 cm",
+        "warranty": "25 months"
+      }
+    },
+    {
+      "id": 78,
+      "brandId": 15,
+      "name": "Soft Marble Ball",
+      "price": 133.49,
+      "discountedPrice": 122.81,
+      "onSale": true,
+      "category": "Industrial",
+      "rating": 1.8,
+      "image": "https://picsum.photos/seed/7G9Il/150/150?grayscale&blur=8",
+      "details": {
+        "description": "Featuring Nobelium-enhanced technology, our Table offers unparalleled tiny performance",
+        "stock": 97,
+        "weight": "269g",
+        "dimensions": "13x16x7 cm",
+        "warranty": "25 months"
+      }
+    },
+    {
+      "id": 79,
+      "brandId": 18,
+      "name": "Ergonomic Gold Fish",
+      "price": 31.75,
+      "discountedPrice": 20.95,
+      "onSale": true,
+      "category": "Toys",
+      "rating": 3.4,
+      "image": "https://picsum.photos/seed/Ridsav/150/150?grayscale&blur=4",
+      "details": {
+        "description": "The sleek and silent Gloves comes with maroon LED lighting for smart functionality",
+        "stock": 110,
+        "weight": "154g",
+        "dimensions": "7x11x6 cm",
+        "warranty": "35 months"
+      }
+    },
+    {
+      "id": 80,
+      "brandId": 14,
+      "name": "Recycled Marble Salad",
+      "price": 23.29,
+      "discountedPrice": 16.07,
+      "onSale": true,
+      "category": "Industrial",
+      "rating": 2,
+      "image": "https://picsum.photos/seed/GpeOe/150/150?blur=1",
+      "details": {
+        "description": "Savor the moist essence in our Computer, designed for unwelcome culinary adventures",
+        "stock": 174,
+        "weight": "448g",
+        "dimensions": "20x20x8 cm",
+        "warranty": "22 months"
+      }
+    },
+    {
+      "id": 81,
+      "brandId": 3,
+      "name": "Luxurious Plastic Shirt",
+      "price": 450.75,
+      "onSale": false,
+      "category": "Books",
+      "rating": 1.8,
+      "image": "https://picsum.photos/seed/T3gxv27e/150/150?blur=3",
+      "details": {
+        "description": "New lime Tuna with ergonomic design for untried comfort",
+        "stock": 79,
+        "weight": "396g",
+        "dimensions": "13x13x8 cm",
+        "warranty": "28 months"
+      }
+    },
+    {
+      "id": 82,
+      "brandId": 15,
+      "name": "Electronic Granite Towels",
+      "price": 527.99,
+      "discountedPrice": 443.51,
+      "onSale": true,
+      "category": "Clothing",
+      "rating": 2.7,
+      "image": "https://picsum.photos/seed/cAQhvvH/150/150?grayscale&blur=8",
+      "details": {
+        "description": "The blue Pizza combines Samoa aesthetics with Beryllium-based durability",
+        "stock": 198,
+        "weight": "272g",
+        "dimensions": "10x19x5 cm",
+        "warranty": "16 months"
+      }
+    },
+    {
+      "id": 83,
+      "brandId": 14,
+      "name": "Generic Cotton Chicken",
+      "price": 685.15,
+      "discountedPrice": 548.12,
+      "onSale": true,
+      "category": "Music",
+      "rating": 2.4,
+      "image": "https://picsum.photos/seed/IoWEv4Gl/150/150",
+      "details": {
+        "description": "Introducing the Malawi-inspired Car, blending motionless style with local craftsmanship",
+        "stock": 44,
+        "weight": "116g",
+        "dimensions": "11x14x4 cm",
+        "warranty": "8 months"
+      }
+    },
+    {
+      "id": 84,
+      "brandId": 4,
+      "name": "Intelligent Steel Shirt",
+      "price": 603.69,
+      "onSale": false,
+      "category": "Industrial",
+      "rating": 3.2,
+      "image": "https://picsum.photos/seed/GBCpI/150/150?grayscale&blur=1",
+      "details": {
+        "description": "Ergonomic Salad made with Steel for all-day mediocre support",
+        "stock": 167,
+        "weight": "374g",
+        "dimensions": "8x10x4 cm",
+        "warranty": "23 months"
+      }
+    },
+    {
+      "id": 85,
+      "brandId": 15,
+      "name": "Recycled Aluminum Chicken",
+      "price": 382.4,
+      "discountedPrice": 328.86,
+      "onSale": true,
+      "category": "Sports",
+      "rating": 2.2,
+      "image": "https://picsum.photos/seed/lVHOQm/150/150?grayscale&blur=9",
+      "details": {
+        "description": "The teal Car combines Luxembourg aesthetics with Selenium-based durability",
+        "stock": 14,
+        "weight": "376g",
+        "dimensions": "19x14x4 cm",
+        "warranty": "24 months"
+      }
+    },
+    {
+      "id": 86,
+      "brandId": 2,
+      "name": "Awesome Bronze Sausages",
+      "price": 240.79,
+      "onSale": false,
+      "category": "Electronics",
+      "rating": 3.6,
+      "image": "https://picsum.photos/seed/QGKYk/150/150?grayscale&blur=10",
+      "details": {
+        "description": "Ergonomic Hat made with Plastic for all-day dental support",
+        "stock": 130,
+        "weight": "133g",
+        "dimensions": "12x8x3 cm",
+        "warranty": "11 months"
+      }
+    },
+    {
+      "id": 87,
+      "brandId": 16,
+      "name": "Licensed Ceramic Computer",
+      "price": 687.95,
+      "onSale": false,
+      "category": "Toys",
+      "rating": 1.8,
+      "image": "https://picsum.photos/seed/FhPKa/150/150?grayscale&blur=7",
+      "details": {
+        "description": "Experience the turquoise brilliance of our Shoes, perfect for admired environments",
+        "stock": 0,
+        "weight": "325g",
+        "dimensions": "8x13x7 cm",
+        "warranty": "9 months"
+      }
+    },
+    {
+      "id": 88,
+      "brandId": 15,
+      "name": "Tasty Concrete Hat",
+      "price": 213.25,
+      "onSale": false,
+      "category": "Jewelry",
+      "rating": 3.1,
+      "image": "https://picsum.photos/seed/NqDBt7d/150/150",
+      "details": {
+        "description": "The sleek and kooky Bike comes with plum LED lighting for smart functionality",
+        "stock": 110,
+        "weight": "277g",
+        "dimensions": "6x13x8 cm",
+        "warranty": "29 months"
+      }
+    },
+    {
+      "id": 89,
+      "brandId": 11,
+      "name": "Gorgeous Ceramic Pizza",
+      "price": 760.95,
+      "discountedPrice": 448.96,
+      "onSale": true,
+      "category": "Games",
+      "rating": 2,
+      "image": "https://picsum.photos/seed/39mLyX9w/150/150?blur=4",
+      "details": {
+        "description": "Experience the maroon brilliance of our Chair, perfect for slushy environments",
+        "stock": 190,
+        "weight": "78g",
+        "dimensions": "16x12x3 cm",
+        "warranty": "33 months"
+      }
+    },
+    {
+      "id": 90,
+      "brandId": 12,
+      "name": "Electronic Marble Towels",
+      "price": 250.79,
+      "discountedPrice": 238.25,
+      "onSale": true,
+      "category": "Music",
+      "rating": 3.8,
+      "image": "https://picsum.photos/seed/YXqavH/150/150?grayscale&blur=6",
+      "details": {
+        "description": "Discover the yearly new Hat with an exciting mix of Rubber ingredients",
+        "stock": 111,
+        "weight": "163g",
+        "dimensions": "14x15x7 cm",
+        "warranty": "25 months"
+      }
+    },
+    {
+      "id": 91,
+      "brandId": 20,
+      "name": "Licensed Plastic Computer",
+      "price": 481.8,
+      "onSale": false,
+      "category": "Computers",
+      "rating": 4.9,
+      "image": "https://picsum.photos/seed/xqg1cTtcuG/150/150?grayscale&blur=6",
+      "details": {
+        "description": "The sleek and incomparable Sausages comes with teal LED lighting for smart functionality",
+        "stock": 6,
+        "weight": "500g",
+        "dimensions": "14x7x2 cm",
+        "warranty": "23 months"
+      }
+    },
+    {
+      "id": 92,
+      "brandId": 7,
+      "name": "Elegant Metal Chicken",
+      "price": 176.29,
+      "onSale": false,
+      "category": "Baby",
+      "rating": 4.3,
+      "image": "https://picsum.photos/seed/Mrvb3Y/150/150?blur=7",
+      "details": {
+        "description": "Bespoke Hat designed with Silk for impractical performance",
+        "stock": 19,
+        "weight": "334g",
+        "dimensions": "18x16x10 cm",
+        "warranty": "16 months"
+      }
+    },
+    {
+      "id": 93,
+      "brandId": 20,
+      "name": "Oriental Marble Pizza",
+      "price": 879.29,
+      "discountedPrice": 615.5,
+      "onSale": true,
+      "category": "Toys",
+      "rating": 3.5,
+      "image": "https://picsum.photos/seed/3z7iqCQj6/150/150?blur=6",
+      "details": {
+        "description": "Experience the maroon brilliance of our Hat, perfect for babyish environments",
+        "stock": 11,
+        "weight": "236g",
+        "dimensions": "8x7x10 cm",
+        "warranty": "19 months"
+      }
+    },
+    {
+      "id": 94,
+      "brandId": 8,
+      "name": "Handcrafted Granite Pants",
+      "price": 914,
+      "discountedPrice": 850.02,
+      "onSale": true,
+      "category": "Health",
+      "rating": 4.4,
+      "image": "https://picsum.photos/seed/O9oRbFnLB3/150/150?grayscale&blur=10",
+      "details": {
+        "description": "Gorgeous Towels designed with Bamboo for nice performance",
+        "stock": 172,
+        "weight": "306g",
+        "dimensions": "20x13x3 cm",
+        "warranty": "14 months"
+      }
+    },
+    {
+      "id": 95,
+      "brandId": 18,
+      "name": "Unbranded Metal Chips",
+      "price": 964.89,
+      "discountedPrice": 810.51,
+      "onSale": true,
+      "category": "Industrial",
+      "rating": 1,
+      "image": "https://picsum.photos/seed/w7kyudgF/150/150?blur=10",
+      "details": {
+        "description": "Experience the lime brilliance of our Shoes, perfect for terrible environments",
+        "stock": 65,
+        "weight": "464g",
+        "dimensions": "9x14x9 cm",
+        "warranty": "6 months"
+      }
+    },
+    {
+      "id": 96,
+      "brandId": 8,
+      "name": "Fresh Silk Cheese",
+      "price": 417.99,
+      "onSale": false,
+      "category": "Baby",
+      "rating": 2.8,
+      "image": "https://picsum.photos/seed/TqQA9hM/150/150?grayscale&blur=6",
+      "details": {
+        "description": "Our bitter-inspired Towels brings a taste of luxury to your muddy lifestyle",
+        "stock": 164,
+        "weight": "330g",
+        "dimensions": "18x18x9 cm",
+        "warranty": "31 months"
+      }
+    },
+    {
+      "id": 97,
+      "brandId": 1,
+      "name": "Luxurious Marble Computer",
+      "price": 333.09,
+      "onSale": false,
+      "category": "Games",
+      "rating": 3.7,
+      "image": "https://picsum.photos/seed/zQgGD/150/150?grayscale&blur=7",
+      "details": {
+        "description": "Stylish Keyboard designed to make you stand out with fatherly looks",
+        "stock": 109,
+        "weight": "131g",
+        "dimensions": "16x18x10 cm",
+        "warranty": "23 months"
+      }
+    },
+    {
+      "id": 98,
+      "brandId": 15,
+      "name": "Intelligent Metal Soap",
+      "price": 459.79,
+      "onSale": false,
+      "category": "Music",
+      "rating": 4.8,
+      "image": "https://picsum.photos/seed/In3NH/150/150?grayscale&blur=9",
+      "details": {
+        "description": "Stylish Hat designed to make you stand out with fruitful looks",
+        "stock": 75,
+        "weight": "430g",
+        "dimensions": "5x5x5 cm",
+        "warranty": "10 months"
+      }
+    },
+    {
+      "id": 99,
+      "brandId": 2,
+      "name": "Refined Wooden Keyboard",
+      "price": 639.29,
+      "discountedPrice": 524.22,
+      "onSale": true,
+      "category": "Jewelry",
+      "rating": 2.7,
+      "image": "https://picsum.photos/seed/pR9n7nQC/150/150?grayscale&blur=5",
+      "details": {
+        "description": "Experience the purple brilliance of our Keyboard, perfect for pale environments",
+        "stock": 83,
+        "weight": "404g",
+        "dimensions": "12x18x9 cm",
+        "warranty": "29 months"
+      }
+    },
+    {
+      "id": 100,
+      "brandId": 2,
+      "name": "Luxurious Bamboo Shoes",
+      "price": 435.89,
+      "discountedPrice": 353.07,
+      "onSale": true,
+      "category": "Books",
+      "rating": 4.5,
+      "image": "https://picsum.photos/seed/Yep5hHpgSv/150/150?blur=4",
+      "details": {
+        "description": "Modern Bike designed with Plastic for average performance",
+        "stock": 18,
+        "weight": "198g",
+        "dimensions": "7x12x8 cm",
+        "warranty": "35 months"
+      }
+    }
+  ]
+}
