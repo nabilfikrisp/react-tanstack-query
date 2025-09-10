@@ -5,9 +5,9 @@ export function Navbar() {
     <header className="sticky top-0 h-16 w-full border-b">
       <div className="app-container flex h-full items-center">
         <Link to="/">
-          <div className="text-primary hover:text-primary/80 text-2xl font-bold">
-            MyApp
-          </div>
+          <span className="text-primary hover:text-primary/80 text-3xl font-bold tracking-tighter text-shadow-md">
+            P&B
+          </span>
         </Link>
 
         <nav className="text-muted-foreground ml-auto space-x-4 font-medium">
