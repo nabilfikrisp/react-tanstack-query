@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "mock-server:seed": "ts-node ./mock-server/seed.ts",
-    "mock-server:start": "ts-node ./mock-server/server.ts",
+    "mock-server:start": "node ./mock-server/server.cjs",
     "mock-server:json": "json-server  ./mock-server/db.json --port 4000"
   },
   "dependencies": {
