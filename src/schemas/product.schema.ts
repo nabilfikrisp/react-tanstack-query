@@ -30,7 +30,7 @@ const productSchema = z.object({
   price: z.number(),
   discountPercentage: z.number(),
   rating: z.number(),
-  stock: z.number(),
+  stock: z.string(),
   tags: z.array(z.string()),
   brand: z.string().optional(),
   sku: z.string(),
