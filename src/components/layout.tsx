@@ -4,7 +4,7 @@ import { Navbar } from "./navbar";
 
 export function Layout() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col antialiased">
       <Navbar />
       <main className="flex flex-1 flex-col">
         <Outlet />
