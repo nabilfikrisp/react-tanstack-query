@@ -7,15 +7,14 @@ import {
   productWithBrandSchema,
 } from "@/schemas/product.schema";
 
+// GET /products
 export type FetchProductsParams = {
   page?: number;
   limit?: number;
   sortBy?: "name" | "price" | "createdAt" | "rating";
   orderBy?: "asc" | "desc";
   onSale?: boolean;
-  brandId?: number;
 };
-
 function buildQueryParams(params: FetchProductsParams) {
   return {
     _page: params.page || DEFAULT_PAGE,
@@ -23,10 +22,8 @@ function buildQueryParams(params: FetchProductsParams) {
     ...(params.sortBy ? { _sort: params.sortBy } : {}),
     ...(params.orderBy ? { _order: params.orderBy } : {}),
     ...(params.onSale !== undefined ? { onSale: params.onSale } : {}),
-    ...(params.brandId ? { brandId: params.brandId } : {}),
   };
 }
-
 export async function fetchProducts(params: FetchProductsParams = {}) {
   const queryParams = buildQueryParams(params);
 
@@ -50,6 +47,7 @@ export async function fetchProducts(params: FetchProductsParams = {}) {
   return productsResponseSchema.parse(data);
 }
 
+// GET /products/:id
 export async function fetchProductById(id: number) {
   const response = await api.get(`/products/${id}`, {
     params: { _expand: "brand" },
