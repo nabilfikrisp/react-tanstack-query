@@ -30,6 +30,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
       />
 
       <ProductBrand
+        id={product.brand.id}
         logo={product.brand.logo}
         name={product.brand.name}
         country={product.brand.country}

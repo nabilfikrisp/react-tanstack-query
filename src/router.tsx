@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import { Layout } from "./components/layout";
 import { IndexPage } from "./pages";
+import { BrandDetailPage } from "./pages/brands/detail.page";
+import { BrandListPage } from "./pages/brands/list.page";
 import { ProductDetailPage } from "./pages/products/detail.page";
 import { ProductListPage } from "./pages/products/list.page";
 
@@ -26,7 +28,11 @@ export function Router() {
           <Route path="brands">
             <Route
               index
-              element={<div>Brand List Page</div>}
+              element={<BrandListPage />}
+            />
+            <Route
+              path=":id"
+              element={<BrandDetailPage />}
             />
           </Route>
           <Route

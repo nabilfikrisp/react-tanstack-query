@@ -1,6 +1,8 @@
 import type { Brand } from "@/schemas/brand.schema";
+import { Link } from "react-router";
 
 type ProductBrandProps = {
+  id: Brand["id"];
   logo: Brand["logo"];
   name: Brand["name"];
   country: Brand["country"];
@@ -9,6 +11,7 @@ type ProductBrandProps = {
 };
 
 export function ProductBrand({
+  id,
   logo,
   name,
   country,
@@ -25,7 +28,9 @@ export function ProductBrand({
           className="h-20 w-20 rounded-lg object-contain"
         />
         <div className="space-y-1">
-          <h3 className="text-foreground font-medium">{name}</h3>
+          <h3 className="text-foreground hover:text-primary font-medium hover:underline">
+            <Link to={`/brands/${id}`}>{name}</Link>
+          </h3>
           <p className="text-muted-foreground text-sm">
             {country} • Est. {founded}
           </p>

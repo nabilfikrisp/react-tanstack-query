@@ -1,6 +1,4 @@
-import { DEFAULT_LIMIT, DEFAULT_PAGE } from "@/lib/constants";
-import { parseAsInteger, parseAsStringEnum, useQueryStates } from "nuqs";
-import { Button } from "../ui/button";
+import { parseAsStringEnum, useQueryStates } from "nuqs";
 import {
   Select,
   SelectContent,
@@ -10,27 +8,14 @@ import {
   SelectValue,
 } from "../ui/select";
 
-const SORTABLE = ["name", "price", "createdAt", "rating"];
+const SORTABLE = ["name", "country", "founded", "createdAt"];
 const ORDERABLE = ["asc", "desc"];
 
-export function ProductListFilter() {
+export function BrandListFilter() {
   const [searchParams, setSearchParams] = useQueryStates({
-    page: parseAsInteger.withDefault(DEFAULT_PAGE),
-    limit: parseAsInteger.withDefault(DEFAULT_LIMIT),
     sortBy: parseAsStringEnum(SORTABLE).withDefault("createdAt"),
     orderBy: parseAsStringEnum(ORDERABLE).withDefault("desc"),
-    brandId: parseAsInteger,
   });
-
-  function handleClearFilters() {
-    setSearchParams({
-      page: DEFAULT_PAGE,
-      limit: DEFAULT_LIMIT,
-      sortBy: "createdAt",
-      orderBy: "desc",
-      brandId: null,
-    });
-  }
 
   return (
     <div className="flex flex-col gap-4 rounded-lg border p-2 shadow-lg">
@@ -81,8 +66,6 @@ export function ProductListFilter() {
           </SelectContent>
         </Select>
       </div>
-
-      <Button onClick={handleClearFilters}>Clear Filters</Button>
     </div>
   );
 }
