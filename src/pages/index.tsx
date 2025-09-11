@@ -34,7 +34,7 @@ export function IndexPage() {
               Discover thousands of products
             </div>
 
-            <h1 className="from-foreground via-foreground to-foreground/80 mb-6 bg-gradient-to-r bg-clip-text text-5xl font-extrabold tracking-tight text-balance text-transparent sm:text-6xl">
+            <h1 className="from-foreground via-foreground to-foreground/80 mb-6 max-w-5xl bg-gradient-to-r bg-clip-text text-5xl font-extrabold tracking-tight text-balance text-transparent sm:text-6xl">
               Discover Amazing{" "}
               <span className="from-primary to-accent bg-gradient-to-r bg-clip-text text-transparent">
                 Products & Brands
