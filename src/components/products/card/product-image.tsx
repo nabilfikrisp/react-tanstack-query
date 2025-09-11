@@ -1,6 +1,8 @@
+import type { Product } from "@/schemas/product.schema";
+
 type ProductImageProps = {
-  image: string;
-  name: string;
+  image: Product["image"];
+  name: Product["name"];
 };
 
 export function ProductImage({ image, name }: ProductImageProps) {

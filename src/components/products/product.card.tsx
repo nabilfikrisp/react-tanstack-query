@@ -5,10 +5,10 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import type { Product } from "@/schemas/product.schema";
-import { ProductButton } from "./card/product.button";
-import { ProductImage } from "./card/product.image";
-import { ProductInfo } from "./card/product.info";
-import { ProductPrice } from "./card/product.price";
+import { ProductButton } from "./card/product-button";
+import { ProductImage } from "./card/product-image";
+import { ProductInfo } from "./card/product-info";
+import { ProductPrice } from "./card/product-price";
 
 type ProductCardProps = {
   product: Product;

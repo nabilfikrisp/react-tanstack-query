@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { metaResponseSchema } from "./response.schema";
 
-const brandSchema = z.object({
+export const brandSchema = z.object({
   id: z.number().int().positive(),
   name: z.string(),
   country: z.string(),

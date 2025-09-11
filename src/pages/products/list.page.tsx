@@ -9,12 +9,7 @@ export function ProductListPage() {
   return (
     <section className="app-container flex flex-1 flex-col gap-4 py-8">
       <header>
-        <h1
-          id="product-list-heading"
-          className="text-2xl font-bold"
-        >
-          Product List
-        </h1>
+        <h1 className="text-primary text-2xl font-bold">Product List</h1>
       </header>
       <StateRenderer
         data={data}

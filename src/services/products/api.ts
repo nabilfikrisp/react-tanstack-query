@@ -2,6 +2,7 @@ import api from "@/configs/axios";
 import {
   productSchema,
   productsResponseSchema,
+  productWithBrandSchema,
 } from "@/schemas/product.schema";
 import { DEFAULT_LIMIT, DEFAULT_PAGE, extractPagination } from "../utils";
 
@@ -40,4 +41,11 @@ export async function fetchProducts(params: FetchProductsParams = {}) {
   };
 
   return productsResponseSchema.parse(data);
+}
+
+export async function fetchProductById(id: number) {
+  const response = await api.get(`/products/${id}`, {
+    params: { _expand: "brand" },
+  });
+  return productWithBrandSchema.parse(response.data);
 }

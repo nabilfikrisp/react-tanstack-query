@@ -1,9 +1,10 @@
 import { Badge } from "@/components/ui/badge";
+import type { Product } from "@/schemas/product.schema";
 
 type ProductPriceProps = {
-  price: number;
-  discountedPrice?: number;
-  onSale: boolean;
+  price: Product["price"];
+  discountedPrice?: Product["discountedPrice"];
+  onSale: Product["onSale"];
 };
 
 export function ProductPrice({

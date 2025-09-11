@@ -1,7 +1,9 @@
+import type { Product } from "@/schemas/product.schema";
+
 type ProductInfoProps = {
-  name: string;
-  category: string;
-  rating: number;
+  name: Product["name"];
+  category: Product["category"];
+  rating: Product["rating"];
 };
 
 export function ProductInfo({ name, category, rating }: ProductInfoProps) {

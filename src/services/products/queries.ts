@@ -1,5 +1,9 @@
 import { queryOptions } from "@tanstack/react-query";
-import { fetchProducts, type FetchProductsParams } from "./api";
+import {
+  fetchProductById,
+  fetchProducts,
+  type FetchProductsParams,
+} from "./api";
 import { productsKeys } from "./keys";
 
 type ProductsQueryOptionsParams = {
@@ -11,5 +15,16 @@ export function productsQueryOptions({
   return queryOptions({
     queryKey: [...productsKeys.list(params)],
     queryFn: () => fetchProducts(params),
+  });
+}
+
+type ProductByIdQueryOptionsParams = {
+  id: number;
+};
+
+export function productByIdQueryOptions({ id }: ProductByIdQueryOptionsParams) {
+  return queryOptions({
+    queryKey: [...productsKeys.details(id)],
+    queryFn: () => fetchProductById(id),
   });
 }

@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { brandSchema } from "./brand.schema";
 import { metaResponseSchema } from "./response.schema";
 
 const productDetailsSchema = z.object({
@@ -22,9 +23,14 @@ export const productSchema = z.object({
   details: productDetailsSchema,
 });
 
-export type Product = z.infer<typeof productSchema>;
+export const productWithBrandSchema = productSchema.extend({
+  brand: brandSchema,
+});
 
 export const productsResponseSchema = metaResponseSchema.extend({
   products: z.array(productSchema),
 });
+
+export type Product = z.infer<typeof productSchema>;
 export type ProductsResponse = z.infer<typeof productsResponseSchema>;
+export type ProductWithBrand = z.infer<typeof productWithBrandSchema>;
