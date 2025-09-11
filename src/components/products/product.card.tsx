@@ -12,9 +12,9 @@ type ProductCardProps = {
 export function ProductCard({ product }: ProductCardProps) {
   return (
     <article className="group">
-      <div className="bg-background ring-muted flex h-full flex-col rounded-2xl shadow-lg ring-1 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:shadow-black/10">
+      <div className="bg-background ring-muted flex h-full flex-col rounded-lg shadow-lg ring-1 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:shadow-black/10">
         {/* Product Image Section */}
-        <div className="overflow-hidden rounded-t-2xl">
+        <div className="overflow-hidden rounded-t-lg">
           <ProductImage
             image={product.image}
             name={product.name}

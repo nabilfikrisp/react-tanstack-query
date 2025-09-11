@@ -1,5 +1,8 @@
 import { ProductDetail } from "@/components/products/product.detail";
-import { StateRenderer } from "@/components/state-renderer";
+import { EmptyUI } from "@/components/states/empty.ui";
+import { ErrorUI } from "@/components/states/error.ui";
+import { LoadingUI } from "@/components/states/loading.ui";
+import { errorParser } from "@/lib/error-parser";
 import { productByIdQueryOptions } from "@/services/products/queries";
 import { useQuery } from "@tanstack/react-query";
 import { ArrowLeftIcon } from "lucide-react";
@@ -12,6 +15,18 @@ export function ProductDetailPage() {
       id: Number(id),
     }),
   );
+
+  if (isLoading) {
+    return <LoadingUI />;
+  }
+  if (error) {
+    const errMessage = errorParser(error, { log: true });
+    return <ErrorUI message={errMessage} />;
+  }
+  if (!data) {
+    return <EmptyUI />;
+  }
+
   return (
     <section className="app-container flex flex-1 flex-col gap-4 py-8">
       <Link
@@ -23,12 +38,8 @@ export function ProductDetailPage() {
           Back to Products
         </span>
       </Link>
-      <StateRenderer
-        data={data}
-        isLoading={isLoading}
-        error={error}
-        render={(data) => <ProductDetail product={data} />}
-      />
+
+      <ProductDetail product={data} />
     </section>
   );
 }

@@ -1,5 +1,5 @@
+import { DEFAULT_LIMIT, DEFAULT_PAGE } from "@/lib/constants";
 import { cn } from "@/lib/utils";
-import { DEFAULT_LIMIT, DEFAULT_PAGE } from "@/services/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { parseAsInteger, useQueryStates } from "nuqs";
 import { Button } from "./ui/button";

@@ -1,16 +1,16 @@
 import api from "@/configs/axios";
+import { DEFAULT_LIMIT, DEFAULT_PAGE } from "@/lib/constants";
+import { extractPagination } from "@/lib/extract-pagination";
 import {
   productSchema,
   productsResponseSchema,
   productWithBrandSchema,
 } from "@/schemas/product.schema";
-import { DEFAULT_LIMIT, DEFAULT_PAGE, extractPagination } from "../utils";
-import type { SortableProductFields } from "./constants";
 
 export type FetchProductsParams = {
   page?: number;
   limit?: number;
-  sortBy?: SortableProductFields;
+  sortBy?: "name" | "price" | "createdAt" | "rating";
   orderBy?: "asc" | "desc";
   onSale?: boolean;
   brandId?: number;
