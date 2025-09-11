@@ -24,18 +24,16 @@ export function ProductHeader({
   description,
 }: ProductHeaderProps) {
   return (
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-8">
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:gap-8">
       {/* Product Image */}
-      <div>
-        <img
-          src={image}
-          alt={name}
-          className="aspect-square w-full rounded-xl object-cover"
-        />
-      </div>
+      <img
+        src={image}
+        alt={name}
+        className="aspect-square w-full rounded-xl object-cover shadow-lg"
+      />
 
       {/* Product Info */}
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 sm:col-span-2">
         <div>
           <h1 className="text-primary text-3xl font-bold tracking-tight sm:text-4xl">
             {name}

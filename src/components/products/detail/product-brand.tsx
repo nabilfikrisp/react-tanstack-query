@@ -22,9 +22,9 @@ export function ProductBrand({
         <img
           src={logo}
           alt={name}
-          className="h-24 w-24 rounded-lg object-contain"
+          className="h-20 w-20 rounded-lg object-contain"
         />
-        <div className="space-y-2">
+        <div className="space-y-1">
           <h3 className="text-foreground font-medium">{name}</h3>
           <p className="text-muted-foreground text-sm">
             {country} • Est. {founded}

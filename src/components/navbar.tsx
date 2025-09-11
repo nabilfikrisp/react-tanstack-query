@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router";
 
 export function Navbar() {
   return (
-    <header className="bg-background sticky top-0 z-50 h-16 w-full border-b">
+    <header className="bg-background sticky top-0 z-50 h-16 w-full shadow-lg">
       <div className="app-container flex h-full items-center">
         <Link to="/">
           <span className="text-primary hover:text-primary/80 text-3xl font-bold tracking-tighter text-shadow-md">

@@ -8,13 +8,20 @@ type ProductListWithParamsProps = {
 };
 export function ProductListWithParams({ data }: ProductListWithParamsProps) {
   return (
-    <div className="flex flex-1 flex-col gap-4">
-      <Filters />
-      <ProductList products={data.products} />
-      <Paginate
-        totalPages={data.totalPages}
-        className="self-center"
-      />
+    <div className="flex flex-1 gap-6">
+      <aside className="w-56 flex-shrink-0">
+        <Filters className="sticky top-4" />
+      </aside>
+      <main className="flex flex-1 flex-col gap-4">
+        <ProductList
+          products={data.products}
+          className="flex-1"
+        />
+        <Paginate
+          totalPages={data.totalPages}
+          className="self-center"
+        />
+      </main>
     </div>
   );
 }

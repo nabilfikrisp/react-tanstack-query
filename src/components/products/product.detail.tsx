@@ -9,7 +9,7 @@ type ProductDetailProps = {
 
 export function ProductDetail({ product }: ProductDetailProps) {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-4">
       <ProductHeader
         image={product.image}
         name={product.name}

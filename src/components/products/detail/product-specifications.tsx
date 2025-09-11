@@ -14,23 +14,23 @@ export function ProductSpecifications({
   warranty,
 }: ProductSpecificationsProps) {
   return (
-    <div>
-      <h2 className="text-foreground text-3xl font-semibold">Specifications</h2>
+    <div className="flex flex-col gap-2">
+      <h2 className="text-foreground text-2xl font-semibold">Specifications</h2>
       <div className="">
         <div className="divide-y">
-          <div className="flex justify-between py-2">
+          <div className="flex justify-between py-1">
             <div className="text-muted-foreground">Stock</div>
             <div className="text-foreground">{stock}</div>
           </div>
-          <div className="flex justify-between py-2">
+          <div className="flex justify-between py-1">
             <div className="text-muted-foreground">Weight</div>
             <div className="text-foreground">{weight}</div>
           </div>
-          <div className="flex justify-between py-2">
+          <div className="flex justify-between py-1">
             <div className="text-muted-foreground">Dimensions</div>
             <div className="text-foreground">{dimensions}</div>
           </div>
-          <div className="flex justify-between py-2">
+          <div className="flex justify-between py-1">
             <div className="text-muted-foreground">Warranty</div>
             <div className="text-foreground">{warranty}</div>
           </div>

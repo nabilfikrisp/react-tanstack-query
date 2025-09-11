@@ -55,13 +55,15 @@ export function Filters({ className }: FiltersProps) {
   };
 
   return (
-    <div className={cn("flex flex-wrap items-center gap-4", className)}>
-      <div className="flex items-center gap-2">
+    <div
+      className={cn("flex flex-col gap-6 rounded-lg p-2 shadow-lg", className)}
+    >
+      <div className="flex flex-col gap-2">
         <label
           htmlFor="page-size"
           className="text-sm font-medium"
         >
-          Page Size:
+          Page Size
         </label>
         <Select
           value={searchParams.limit.toString()}
@@ -69,7 +71,7 @@ export function Filters({ className }: FiltersProps) {
         >
           <SelectTrigger
             id="page-size"
-            className="w-20"
+            className="w-full"
           >
             <SelectValue />
           </SelectTrigger>
@@ -86,12 +88,12 @@ export function Filters({ className }: FiltersProps) {
         </Select>
       </div>
 
-      <div className="flex items-center gap-2">
+      <div className="flex flex-col gap-2">
         <label
           htmlFor="sort-by"
           className="text-sm font-medium"
         >
-          Sort By:
+          Sort By
         </label>
         <Select
           value={searchParams.sort}
@@ -99,7 +101,7 @@ export function Filters({ className }: FiltersProps) {
         >
           <SelectTrigger
             id="sort-by"
-            className="w-32"
+            className="w-full"
           >
             <SelectValue placeholder="Select..." />
           </SelectTrigger>
@@ -113,12 +115,12 @@ export function Filters({ className }: FiltersProps) {
         </Select>
       </div>
 
-      <div className="flex items-center gap-2">
+      <div className="flex flex-col gap-2">
         <label
           htmlFor="sort-order"
           className="text-sm font-medium"
         >
-          Order:
+          Order
         </label>
         <Select
           value={searchParams.order}
@@ -126,7 +128,7 @@ export function Filters({ className }: FiltersProps) {
         >
           <SelectTrigger
             id="sort-order"
-            className="w-24"
+            className="w-full"
           >
             <SelectValue />
           </SelectTrigger>
@@ -141,7 +143,7 @@ export function Filters({ className }: FiltersProps) {
         variant="outline"
         size="sm"
         onClick={clearFilters}
-        className="ml-auto"
+        className="w-full"
       >
         Clear Filters
       </Button>
