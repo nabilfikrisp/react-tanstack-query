@@ -1,5 +1,5 @@
 export const DEFAULT_PAGE = 1;
-export const DEFAULT_LIMIT = 12;
+export const DEFAULT_LIMIT = 6;
 
 type ExtractPaginationParams = {
   count?: number;

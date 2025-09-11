@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import type { Product } from "@/schemas/product.schema";
+import ProductStars from "./product-stars";
 
 type ProductHeaderProps = {
   image: Product["image"];
@@ -42,16 +43,7 @@ export function ProductHeader({
         </div>
 
         <div className="flex items-center gap-2">
-          <div className="flex">
-            {[...Array(5)].map((_, i) => (
-              <span
-                key={i}
-                className={`text-sm ${i < Math.floor(rating) ? "text-foreground" : "text-gray-300"}`}
-              >
-                ★
-              </span>
-            ))}
-          </div>
+          <ProductStars rating={rating} />
           <span className="text-muted-foreground text-sm">{rating}</span>
         </div>
 

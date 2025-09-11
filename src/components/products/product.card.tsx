@@ -1,9 +1,3 @@
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
 import type { Product } from "@/schemas/product.schema";
 import { ProductButton } from "./card/product-button";
 import { ProductImage } from "./card/product-image";
@@ -16,15 +10,18 @@ type ProductCardProps = {
 
 export function ProductCard({ product }: ProductCardProps) {
   return (
-    <article>
-      <Card className="flex h-full flex-col rounded-lg py-0 shadow-sm">
-        <CardHeader className="p-0">
+    <article className="group">
+      <div className="bg-background ring-muted flex h-full flex-col rounded-2xl shadow-sm ring-1 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:shadow-black/10">
+        {/* Product Image Section */}
+        <div className="overflow-hidden rounded-t-2xl">
           <ProductImage
             image={product.image}
             name={product.name}
           />
-        </CardHeader>
-        <CardContent className="flex-1 p-4">
+        </div>
+
+        {/* Product Content Section */}
+        <div className="flex-1 space-y-4 p-4">
           <ProductInfo
             name={product.name}
             category={product.category}
@@ -35,11 +32,13 @@ export function ProductCard({ product }: ProductCardProps) {
             discountedPrice={product.discountedPrice}
             onSale={product.onSale}
           />
-        </CardContent>
-        <CardFooter className="p-4 pt-0">
+        </div>
+
+        {/* Product Action Section */}
+        <div className="p-4 pt-0">
           <ProductButton id={product.id} />
-        </CardFooter>
-      </Card>
+        </div>
+      </div>
     </article>
   );
 }
