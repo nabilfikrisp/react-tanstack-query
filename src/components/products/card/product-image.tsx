@@ -10,7 +10,7 @@ export function ProductImage({ image, name }: ProductImageProps) {
     <img
       src={image}
       alt={`Image of ${name}`}
-      className="h-40 w-full rounded-t-lg object-cover"
+      className="h-48 w-full rounded-t-lg object-cover"
     />
   );
 }

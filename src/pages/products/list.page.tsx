@@ -3,15 +3,18 @@ import { ProductList } from "@/components/products/product.list";
 import { EmptyUI } from "@/components/states/empty.ui";
 import { ErrorUI } from "@/components/states/error.ui";
 import { LoadingUI } from "@/components/states/loading.ui";
-import { Button } from "@/components/ui/button";
+import { useInfiniteScroll } from "@/hooks/use-infinite-scroll";
 import { DEFAULT_LIMIT, DEFAULT_PAGE } from "@/lib/constants";
 import { errorParser } from "@/lib/error-parser";
 import { productsInfiniteQueryOptions } from "@/services/products/queries";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { parseAsInteger, parseAsStringEnum, useQueryStates } from "nuqs";
+import { useRef } from "react";
 
 export function ProductListPage() {
-  const [searchParams, setSearchParams] = useQueryStates({
+  const loadMoreRef = useRef<HTMLDivElement>(null);
+
+  const [searchParams] = useQueryStates({
     page: parseAsInteger.withDefault(DEFAULT_PAGE),
     limit: parseAsInteger.withDefault(DEFAULT_LIMIT),
     sortBy: parseAsStringEnum([
@@ -23,17 +26,31 @@ export function ProductListPage() {
     orderBy: parseAsStringEnum(["asc", "desc"]).withDefault("desc"),
   });
 
-  const { data, error, isLoading, fetchNextPage, hasNextPage } =
-    useInfiniteQuery(
-      productsInfiniteQueryOptions({
-        params: {
-          page: searchParams.page,
-          limit: searchParams.limit,
-          orderBy: searchParams.orderBy,
-          sortBy: searchParams.sortBy,
-        },
-      }),
-    );
+  const {
+    data,
+    error,
+    isLoading,
+    fetchNextPage,
+    hasNextPage,
+    isFetchingNextPage,
+  } = useInfiniteQuery(
+    productsInfiniteQueryOptions({
+      params: {
+        page: searchParams.page,
+        limit: searchParams.limit,
+        orderBy: searchParams.orderBy,
+        sortBy: searchParams.sortBy,
+      },
+    }),
+  );
+
+  useInfiniteScroll({
+    ref: loadMoreRef,
+    hasNextPage,
+    isFetchingNextPage,
+    fetchNextPage,
+    rootMargin: "200px",
+  });
 
   if (isLoading) {
     return <LoadingUI />;
@@ -46,11 +63,6 @@ export function ProductListPage() {
 
   if (!data || data.pages[0].products.length === 0) {
     return <EmptyUI />;
-  }
-
-  function handleLoadMore() {
-    setSearchParams({ page: searchParams.page + 1 });
-    fetchNextPage();
   }
 
   const products = data.pages.flatMap((page) => page.products);
@@ -66,7 +78,14 @@ export function ProductListPage() {
           className="flex-1"
         />
 
-        {hasNextPage && <Button onClick={handleLoadMore}>Load more</Button>}
+        {hasNextPage && (
+          <div
+            ref={loadMoreRef}
+            className="flex justify-center py-4"
+          >
+            {isFetchingNextPage && <LoadingUI />}
+          </div>
+        )}
       </div>
     </section>
   );

@@ -1,8 +1,8 @@
 import { faker } from "@faker-js/faker";
 import fs from "fs";
 
-const NUM_BRANDS = 20;
-const NUM_PRODUCTS = 100;
+const NUM_BRANDS = 25;
+const NUM_PRODUCTS = 200;
 
 // Generate brands
 const brands = Array.from({ length: NUM_BRANDS }, (_, i) => ({
