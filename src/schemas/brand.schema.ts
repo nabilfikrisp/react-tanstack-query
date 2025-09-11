@@ -8,6 +8,7 @@ export const brandSchema = z.object({
   founded: z.number().int().positive(),
   description: z.string(),
   logo: z.url(),
+  createdAt: z.string(),
 });
 
 export type Brand = z.infer<typeof brandSchema>;

@@ -5,10 +5,14 @@ import {
   productWithBrandSchema,
 } from "@/schemas/product.schema";
 import { DEFAULT_LIMIT, DEFAULT_PAGE, extractPagination } from "../utils";
+import type { SortableProductFields } from "./constants";
 
 export type FetchProductsParams = {
   page?: number;
   limit?: number;
+  sortBy?: SortableProductFields;
+  orderBy?: "asc" | "desc";
+  onSale?: boolean;
   brandId?: number;
 };
 
@@ -16,6 +20,9 @@ function buildQueryParams(params: FetchProductsParams) {
   return {
     _page: params.page || DEFAULT_PAGE,
     _limit: params.limit || DEFAULT_LIMIT,
+    ...(params.sortBy ? { _sort: params.sortBy } : {}),
+    ...(params.orderBy ? { _order: params.orderBy } : {}),
+    ...(params.onSale !== undefined ? { onSale: params.onSale } : {}),
     ...(params.brandId ? { brandId: params.brandId } : {}),
   };
 }

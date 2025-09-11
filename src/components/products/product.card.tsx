@@ -1,4 +1,5 @@
 import type { Product } from "@/schemas/product.schema";
+import { format } from "date-fns";
 import { ProductButton } from "./card/product-button";
 import { ProductImage } from "./card/product-image";
 import { ProductInfo } from "./card/product-info";
@@ -32,6 +33,11 @@ export function ProductCard({ product }: ProductCardProps) {
             discountedPrice={product.discountedPrice}
             onSale={product.onSale}
           />
+
+          {/* Created At */}
+          <div className="text-muted-foreground text-sm">
+            {format(new Date(product.createdAt), "MMM dd, yyyy")}
+          </div>
         </div>
 
         {/* Product Action Section */}

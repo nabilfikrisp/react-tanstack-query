@@ -9,7 +9,12 @@ type ProductListProps = {
 
 export function ProductList({ products, className }: ProductListProps) {
   return (
-    <div className={cn("grid grid-cols-1 gap-6 sm:grid-cols-3", className)}>
+    <div
+      className={cn(
+        "grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3",
+        className,
+      )}
+    >
       {products.map((product) => (
         <ProductCard
           key={product.id}

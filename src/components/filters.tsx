@@ -14,14 +14,15 @@ const LIMIT_OPTIONS = [6, 10, 20, 50, 100];
 
 interface FiltersProps {
   className?: string;
+  sortable?: string[];
 }
 
-export function Filters({ className }: FiltersProps) {
+export function Filters({ className, sortable }: FiltersProps) {
   const [searchParams, setSearchParams] = useQueryStates({
     page: parseAsInteger.withDefault(DEFAULT_PAGE),
     limit: parseAsInteger.withDefault(DEFAULT_LIMIT),
-    sort: parseAsString.withDefault("none"),
-    order: parseAsString.withDefault("asc"),
+    sortBy: parseAsString.withDefault("none"),
+    orderBy: parseAsString.withDefault("desc"),
   });
 
   const handleLimitChange = (newLimit: string) => {
@@ -33,14 +34,14 @@ export function Filters({ className }: FiltersProps) {
 
   const handleSortChange = (newSort: string) => {
     setSearchParams({
-      sort: newSort,
+      sortBy: newSort,
       page: 1, // Reset to first page when changing sort
     });
   };
 
   const handleOrderChange = (newOrder: string) => {
     setSearchParams({
-      order: newOrder,
+      orderBy: newOrder,
       page: 1, // Reset to first page when changing order
     });
   };
@@ -49,8 +50,8 @@ export function Filters({ className }: FiltersProps) {
     setSearchParams({
       page: DEFAULT_PAGE,
       limit: DEFAULT_LIMIT,
-      sort: "none",
-      order: "asc",
+      sortBy: "none",
+      orderBy: "asc",
     });
   };
 
@@ -88,32 +89,37 @@ export function Filters({ className }: FiltersProps) {
         </Select>
       </div>
 
-      <div className="flex flex-col gap-2">
-        <label
-          htmlFor="sort-by"
-          className="text-sm font-medium"
-        >
-          Sort By
-        </label>
-        <Select
-          value={searchParams.sort}
-          onValueChange={handleSortChange}
-        >
-          <SelectTrigger
-            id="sort-by"
-            className="w-full"
+      {sortable && sortable.length > 0 && (
+        <div className="flex flex-col gap-2">
+          <label
+            htmlFor="sort-by"
+            className="text-sm font-medium"
           >
-            <SelectValue placeholder="Select..." />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="none">None</SelectItem>
-            <SelectItem value="title">Title</SelectItem>
-            <SelectItem value="price">Price</SelectItem>
-            <SelectItem value="rating">Rating</SelectItem>
-            <SelectItem value="category">Category</SelectItem>
-          </SelectContent>
-        </Select>
-      </div>
+            Sort By
+          </label>
+          <Select
+            value={searchParams.sortBy}
+            onValueChange={handleSortChange}
+          >
+            <SelectTrigger
+              id="sort-by"
+              className="w-full"
+            >
+              <SelectValue placeholder="Select..." />
+            </SelectTrigger>
+            <SelectContent>
+              {sortable.map((field) => (
+                <SelectItem
+                  key={field}
+                  value={field}
+                >
+                  {field}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
+      )}
 
       <div className="flex flex-col gap-2">
         <label
@@ -123,7 +129,7 @@ export function Filters({ className }: FiltersProps) {
           Order
         </label>
         <Select
-          value={searchParams.order}
+          value={searchParams.orderBy}
           onValueChange={handleOrderChange}
         >
           <SelectTrigger

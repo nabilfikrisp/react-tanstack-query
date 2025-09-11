@@ -18,6 +18,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
         price={product.price}
         discountedPrice={product.discountedPrice}
         onSale={product.onSale}
+        createdAt={product.createdAt}
         description={product.details.description}
       />
 

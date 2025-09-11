@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import type { Product } from "@/schemas/product.schema";
+import { format } from "date-fns";
 import ProductStars from "./product-stars";
 
 type ProductHeaderProps = {
@@ -10,6 +11,7 @@ type ProductHeaderProps = {
   price: Product["price"];
   discountedPrice?: Product["discountedPrice"];
   onSale: Product["onSale"];
+  createdAt: Product["createdAt"];
   description: Product["details"]["description"];
 };
 
@@ -22,6 +24,7 @@ export function ProductHeader({
   discountedPrice,
   onSale,
   description,
+  createdAt,
 }: ProductHeaderProps) {
   return (
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:gap-8">
@@ -62,6 +65,11 @@ export function ProductHeader({
         <div className="flex flex-col gap-2">
           <h2 className="text-foreground text-xl font-semibold">Description</h2>
           <p className="text-muted-foreground leading-relaxed">{description}</p>
+        </div>
+
+        {/* Created At */}
+        <div className="text-muted-foreground text-sm">
+          Created: {format(new Date(createdAt), "MMM dd, yyyy")}
         </div>
       </div>
     </div>

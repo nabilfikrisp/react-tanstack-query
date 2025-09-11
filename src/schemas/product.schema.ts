@@ -20,6 +20,7 @@ export const productSchema = z.object({
   category: z.string(),
   rating: z.number().min(0).max(5),
   image: z.url(),
+  createdAt: z.string(),
   details: productDetailsSchema,
 });
 

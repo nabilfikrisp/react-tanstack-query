@@ -17,11 +17,16 @@ const brands = Array.from({ length: NUM_BRANDS }, (_, i) => ({
     grayscale: false,
     blur: 0,
   }),
+  createdAt: faker.date.past({ years: 5 }).toISOString(),
 }));
 
 // Generate products
 const products = Array.from({ length: NUM_PRODUCTS }, (_, i) => {
   const brandId = faker.number.int({ min: 1, max: NUM_BRANDS });
+  const brandCreatedAt = new Date(
+    brands.find((b) => b.id === brandId)!.createdAt,
+  );
+
   const price = parseFloat(faker.commerce.price());
   const onSale = faker.datatype.boolean(); // 50% chance
   const discountedPrice = onSale
@@ -45,6 +50,9 @@ const products = Array.from({ length: NUM_PRODUCTS }, (_, i) => {
       grayscale: false,
       blur: 0,
     }),
+    createdAt: faker.date
+      .between({ from: brandCreatedAt, to: new Date() })
+      .toISOString(),
     details: {
       description: faker.commerce.productDescription(),
       stock: faker.number.int({ min: 0, max: 200 }),
