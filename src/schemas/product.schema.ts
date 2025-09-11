@@ -9,7 +9,7 @@ const productDetailsSchema = z.object({
   warranty: z.string(), // e.g., "14 months"
 });
 
-const productSchema = z.object({
+export const productSchema = z.object({
   id: z.number().int().positive(),
   brandId: z.number().int().positive(),
   name: z.string(),

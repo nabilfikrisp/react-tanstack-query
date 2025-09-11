@@ -1,4 +1,9 @@
+import type { FetchProductsParams } from "./api";
+
 export const productsKeys = {
-  list: "products",
-  details: "product-detail",
+  all: ["products"],
+  list: (params?: FetchProductsParams) =>
+    params ? ["products", "list", params] : ["products", "list"],
+  details: (id?: number) =>
+    id ? ["products", "detail", id] : ["products", "detail"],
 } as const;

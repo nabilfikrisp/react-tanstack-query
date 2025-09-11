@@ -11,7 +11,12 @@ const brands = Array.from({ length: NUM_BRANDS }, (_, i) => ({
   country: faker.location.country(),
   founded: faker.date.past({ years: 50 }).getFullYear(),
   description: faker.company.catchPhrase(),
-  logo: faker.image.urlPicsumPhotos({ width: 200, height: 200 }),
+  logo: faker.image.urlPicsumPhotos({
+    width: 200,
+    height: 200,
+    grayscale: false,
+    blur: 0,
+  }),
 }));
 
 // Generate products
@@ -34,7 +39,12 @@ const products = Array.from({ length: NUM_PRODUCTS }, (_, i) => {
     onSale,
     category: faker.commerce.department(),
     rating: faker.number.float({ min: 1, max: 5, fractionDigits: 1 }),
-    image: faker.image.urlPicsumPhotos({ width: 150, height: 150 }),
+    image: faker.image.urlPicsumPhotos({
+      width: 200,
+      height: 200,
+      grayscale: false,
+      blur: 0,
+    }),
     details: {
       description: faker.commerce.productDescription(),
       stock: faker.number.int({ min: 0, max: 200 }),

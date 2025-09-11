@@ -1,10 +1,15 @@
 import { queryOptions } from "@tanstack/react-query";
-import { fetchProducts } from "./api";
+import { fetchProducts, type FetchProductsParams } from "./api";
 import { productsKeys } from "./keys";
 
-export function productsQueryOptions() {
+type ProductsQueryOptionsParams = {
+  params?: FetchProductsParams;
+};
+export function productsQueryOptions({
+  params,
+}: ProductsQueryOptionsParams = {}) {
   return queryOptions({
-    queryKey: [productsKeys.list],
-    queryFn: () => fetchProducts(),
+    queryKey: [...productsKeys.list(params)],
+    queryFn: () => fetchProducts(params),
   });
 }

@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "mock-server:seed": "ts-node ./mock-server/seed.ts",
-    "mock-server:start": "json-server  ./mock-server/db.json --port 4000"
+    "mock-server:start": "json-server  ./mock-server/db.json --port 4000",
+    "mock-server:seed:start": "npm run mock-server:seed && npm run mock-server:start"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
