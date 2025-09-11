@@ -1,13 +1,13 @@
 // filepath: c:\Users\mnabi\dev\unnispick\react-tanstack-query\src\components\brands\brand.detail.tsx
 import { ProductCard } from "@/components/products/product.card";
-import type { BrandWithProducts } from "@/schemas/brand.schema";
+import type { Brand } from "@/schemas/brand.schema";
 import { productsInfiniteQueryOptions } from "@/services/products/queries";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { BuildingIcon, CalendarIcon, MapPinIcon } from "lucide-react";
 import { Button } from "../ui/button";
 
 type BrandDetailProps = {
-  brand: BrandWithProducts;
+  brand: Brand;
 };
 
 export function BrandDetail({ brand }: BrandDetailProps) {
@@ -76,16 +76,12 @@ export function BrandDetail({ brand }: BrandDetailProps) {
 
         {allProducts.length > 0 && (
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {allProducts
-              .filter(
-                (product) => !brand.products?.some((p) => p.id === product.id),
-              )
-              .map((product) => (
-                <ProductCard
-                  key={product.id}
-                  product={product}
-                />
-              ))}
+            {allProducts.map((product) => (
+              <ProductCard
+                key={product.id}
+                product={product}
+              />
+            ))}
           </div>
         )}
 
