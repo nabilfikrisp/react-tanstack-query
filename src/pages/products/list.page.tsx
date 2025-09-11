@@ -18,7 +18,7 @@ export function ProductListPage() {
   );
 
   return (
-    <section className="app-container flex flex-1 flex-col gap-4 py-8">
+    <section className="app-container flex flex-1 flex-col gap-4 py-4">
       <StateRenderer
         data={data}
         isLoading={isLoading}
