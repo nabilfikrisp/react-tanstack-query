@@ -1,20 +1,32 @@
-import globals from "globals";
+import pluginQuery from "@tanstack/eslint-plugin-query";
+import tsPlugin from "@typescript-eslint/eslint-plugin";
+import tsParser from "@typescript-eslint/parser";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 import { globalIgnores } from "eslint/config";
-import tsPlugin from "@typescript-eslint/eslint-plugin";
-import pluginQuery from "@tanstack/eslint-plugin-query";
+import globals from "globals";
+
+import { dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export default [
-  globalIgnores(["dist", "src/components/shadcn-ui/**"]),
+  globalIgnores([
+    "dist",
+    "src/components/ui/**",
+    "mock-server/**",
+    "vite.config.ts",
+  ]),
   {
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
-      parser: "@typescript-eslint/parser",
+      parser: tsParser,
       parserOptions: {
-        project: "./tsconfig.json",
+        project: "./tsconfig.app.json",
         tsconfigRootDir: __dirname,
         sourceType: "module",
       },
