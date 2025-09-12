@@ -1,6 +1,7 @@
-import { DEFAULT_LIMIT, DEFAULT_PAGE } from "@/lib/constants";
-import { parseAsInteger, parseAsStringEnum, useQueryStates } from "nuqs";
+import { useProductSearchParams } from "@/hooks/use-product-search-params";
+
 import { Button } from "../ui/button";
+import { Label } from "../ui/label";
 import {
   Select,
   SelectContent,
@@ -9,27 +10,14 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../ui/select";
-
-const SORTABLE = ["name", "price", "createdAt", "rating"];
-const ORDERABLE = ["asc", "desc"];
+import { Switch } from "../ui/switch";
 
 export function ProductListFilter() {
-  const [searchParams, setSearchParams] = useQueryStates({
-    page: parseAsInteger.withDefault(DEFAULT_PAGE),
-    limit: parseAsInteger.withDefault(DEFAULT_LIMIT),
-    sortBy: parseAsStringEnum(SORTABLE).withDefault("createdAt"),
-    orderBy: parseAsStringEnum(ORDERABLE).withDefault("desc"),
-    brandId: parseAsInteger,
-  });
+  const { searchParams, setSearchParams, clear, SORTABLE, ORDERABLE } =
+    useProductSearchParams();
 
   function handleClearFilters() {
-    setSearchParams({
-      page: DEFAULT_PAGE,
-      limit: DEFAULT_LIMIT,
-      sortBy: "createdAt",
-      orderBy: "desc",
-      brandId: null,
-    });
+    clear();
   }
 
   return (
@@ -80,6 +68,22 @@ export function ProductListFilter() {
             </SelectGroup>
           </SelectContent>
         </Select>
+      </div>
+
+      <div className="flex flex-col gap-2">
+        <Label
+          htmlFor="on-sale-switch"
+          className="text-sm font-semibold"
+        >
+          On Sale Only
+        </Label>
+        <Switch
+          id="on-sale-switch"
+          checked={searchParams.onSale === true}
+          onCheckedChange={(checked) =>
+            setSearchParams({ onSale: checked ? true : null })
+          }
+        />
       </div>
 
       <Button onClick={handleClearFilters}>Clear Filters</Button>

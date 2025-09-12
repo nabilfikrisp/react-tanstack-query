@@ -4,27 +4,16 @@ import { EmptyUI } from "@/components/states/empty.ui";
 import { ErrorUI } from "@/components/states/error.ui";
 import { LoadingUI } from "@/components/states/loading.ui";
 import { useInfiniteScroll } from "@/hooks/use-infinite-scroll";
-import { DEFAULT_LIMIT, DEFAULT_PAGE } from "@/lib/constants";
+import { useProductSearchParams } from "@/hooks/use-product-search-params";
 import { errorParser } from "@/lib/error-parser";
 import { productsInfiniteQueryOptions } from "@/services/products/queries";
 import { useInfiniteQuery } from "@tanstack/react-query";
-import { parseAsInteger, parseAsStringEnum, useQueryStates } from "nuqs";
 import { useRef } from "react";
 
 export default function ProductListPage() {
   const loadMoreRef = useRef<HTMLDivElement>(null);
 
-  const [searchParams] = useQueryStates({
-    page: parseAsInteger.withDefault(DEFAULT_PAGE),
-    limit: parseAsInteger.withDefault(DEFAULT_LIMIT),
-    sortBy: parseAsStringEnum([
-      "name",
-      "price",
-      "createdAt",
-      "rating",
-    ]).withDefault("createdAt"),
-    orderBy: parseAsStringEnum(["asc", "desc"]).withDefault("desc"),
-  });
+  const { searchParams } = useProductSearchParams();
 
   const {
     data,
@@ -40,6 +29,7 @@ export default function ProductListPage() {
         limit: searchParams.limit,
         orderBy: searchParams.orderBy,
         sortBy: searchParams.sortBy,
+        onSale: searchParams.onSale,
       },
     }),
   );

@@ -1,5 +1,10 @@
 import api from "@/configs/axios";
-import { DEFAULT_LIMIT, DEFAULT_PAGE } from "@/lib/constants";
+import {
+  DEFAULT_LIMIT,
+  DEFAULT_PAGE,
+  type ProductOrderBy,
+  type ProductSortBy,
+} from "@/lib/constants";
 import { extractPagination } from "@/lib/extract-pagination";
 import {
   productSchema,
@@ -11,9 +16,9 @@ import {
 export type FetchProductsParams = {
   page?: number;
   limit?: number;
-  sortBy?: "name" | "price" | "createdAt" | "rating";
-  orderBy?: "asc" | "desc";
-  onSale?: boolean;
+  sortBy?: ProductSortBy;
+  orderBy?: ProductOrderBy;
+  onSale?: boolean | null;
   brandId?: number | null;
 };
 function buildQueryParams(params: FetchProductsParams) {
