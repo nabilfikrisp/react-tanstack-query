@@ -25,7 +25,7 @@ export const productSchema = z.object({
 });
 
 export const productWithBrandSchema = productSchema.extend({
-  brand: brandSchema,
+  brand: z.lazy(() => brandSchema),
 });
 
 export const productsResponseSchema = metaResponseSchema.extend({

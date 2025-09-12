@@ -2,7 +2,7 @@ import { usePrefetch } from "@/hooks/use-prefetch";
 import { Link, NavLink } from "react-router";
 
 export function Navbar() {
-  const { prefetchInfiniteProducts } = usePrefetch();
+  const { prefetchInfiniteProducts, prefetchInfiniteBrands } = usePrefetch();
 
   return (
     <header className="bg-background sticky top-0 z-50 h-16 w-full shadow-lg">
@@ -28,6 +28,7 @@ export function Navbar() {
             className={({ isActive }) =>
               isActive ? "text-primary font-semibold" : "hover:text-primary/80"
             }
+            onMouseEnter={prefetchInfiniteBrands}
           >
             Brands
           </NavLink>
