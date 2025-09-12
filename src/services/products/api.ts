@@ -20,6 +20,7 @@ export type FetchProductsParams = {
   orderBy?: OrderBy;
   onSale?: boolean | null;
   brandId?: number | null;
+  search?: string | null;
 };
 function buildQueryParams(params: FetchProductsParams) {
   return {
@@ -29,6 +30,7 @@ function buildQueryParams(params: FetchProductsParams) {
     ...(params.orderBy ? { _order: params.orderBy } : {}),
     ...(params.onSale !== undefined ? { onSale: params.onSale } : {}),
     ...(params.brandId ? { brandId: params.brandId } : {}),
+    ...(params.search ? { name_like: params.search } : {}),
   };
 }
 export async function fetchProducts(params: FetchProductsParams = {}) {

@@ -10,6 +10,7 @@ import {
 import {
   parseAsBoolean,
   parseAsInteger,
+  parseAsString,
   parseAsStringEnum,
   useQueryStates,
 } from "nuqs";
@@ -21,6 +22,7 @@ export function useProductSearchParams() {
     sortBy: parseAsStringEnum(PRODUCT_SORT).withDefault("createdAt"),
     orderBy: parseAsStringEnum(ORDER_BY).withDefault("desc"),
     onSale: parseAsBoolean,
+    search: parseAsString,
   });
 
   const safeSearchParams = searchParams as Omit<
@@ -38,6 +40,7 @@ export function useProductSearchParams() {
       sortBy: "createdAt",
       orderBy: "desc",
       onSale: null,
+      search: null,
     });
   }
 
