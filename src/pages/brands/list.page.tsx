@@ -3,28 +3,17 @@ import { BrandList } from "@/components/brands/brand.list";
 import { EmptyUI } from "@/components/states/empty.ui";
 import { ErrorUI } from "@/components/states/error.ui";
 import { LoadingUI } from "@/components/states/loading.ui";
+import { useBrandSearchParams } from "@/hooks/use-brand-search-params";
 import { useInfiniteScroll } from "@/hooks/use-infinite-scroll";
-import { DEFAULT_LIMIT, DEFAULT_PAGE } from "@/lib/constants";
 import { errorParser } from "@/lib/error-parser";
 import { brandsInfiniteQueryOptions } from "@/services/brands/queries";
 import { useInfiniteQuery } from "@tanstack/react-query";
-import { parseAsInteger, parseAsStringEnum, useQueryStates } from "nuqs";
 import { useRef } from "react";
 
 export default function BrandListPage() {
   const loadMoreRef = useRef<HTMLDivElement>(null);
 
-  const [searchParams] = useQueryStates({
-    page: parseAsInteger.withDefault(DEFAULT_PAGE),
-    limit: parseAsInteger.withDefault(DEFAULT_LIMIT),
-    sortBy: parseAsStringEnum([
-      "name",
-      "country",
-      "founded",
-      "createdAt",
-    ]).withDefault("createdAt"),
-    orderBy: parseAsStringEnum(["asc", "desc"]).withDefault("desc"),
-  });
+  const { searchParams } = useBrandSearchParams();
 
   const {
     data,

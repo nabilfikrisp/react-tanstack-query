@@ -1,4 +1,6 @@
-import { parseAsStringEnum, useQueryStates } from "nuqs";
+import { useBrandSearchParams } from "@/hooks/use-brand-search-params";
+import { BRAND_SORT, ORDER_BY } from "@/lib/constants";
+import { Button } from "../ui/button";
 import {
   Select,
   SelectContent,
@@ -8,14 +10,12 @@ import {
   SelectValue,
 } from "../ui/select";
 
-const SORTABLE = ["name", "country", "founded", "createdAt"];
-const ORDERABLE = ["asc", "desc"];
-
 export function BrandListFilter() {
-  const [searchParams, setSearchParams] = useQueryStates({
-    sortBy: parseAsStringEnum(SORTABLE).withDefault("createdAt"),
-    orderBy: parseAsStringEnum(ORDERABLE).withDefault("desc"),
-  });
+  const { searchParams, setSearchParams, clear } = useBrandSearchParams();
+
+  function handleClearFilters() {
+    clear();
+  }
 
   return (
     <div className="flex flex-col gap-4 rounded-lg border p-2 shadow-lg">
@@ -30,7 +30,7 @@ export function BrandListFilter() {
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
-              {SORTABLE.map((field) => (
+              {BRAND_SORT.map((field) => (
                 <SelectItem
                   key={field}
                   value={field}
@@ -54,7 +54,7 @@ export function BrandListFilter() {
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
-              {ORDERABLE.map((field) => (
+              {ORDER_BY.map((field) => (
                 <SelectItem
                   key={field}
                   value={field}
@@ -66,6 +66,8 @@ export function BrandListFilter() {
           </SelectContent>
         </Select>
       </div>
+
+      <Button onClick={handleClearFilters}>Clear Filters</Button>
     </div>
   );
 }
