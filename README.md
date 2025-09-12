@@ -114,6 +114,76 @@ export const Comp: FC<CompProps> = ({ header, description }) => {
 };
 ```
 
+### Props inheritance
+
+Kita bisa extend props bawaan HTML lalu tambah props custom sendiri:
+
+```tsx
+import { InputHTMLAttributes } from "react";
+
+// Semua props input HTML + props custom
+type CustomInputProps = InputHTMLAttributes<HTMLInputElement> & {
+  label?: string;
+  errorMessage?: string;
+};
+
+export function CustomInput({
+  label,
+  errorMessage,
+  ...rest
+}: CustomInputProps) {
+  return (
+    <div>
+      {label && <label>{label}</label>}
+      <input {...rest} />
+      {errorMessage && <span style={{ color: "red" }}>{errorMessage}</span>}
+    </div>
+  );
+}
+```
+
+### Extending Component kita sendiri
+
+Kita bisa inherit props dari component lain dan menambahkan props baru:
+
+```tsx
+// Component pertama
+type CustomCompFirstProps = {
+  header: string;
+  description?: string;
+};
+
+export function CustomCompFirst({ header, description }: CustomCompFirstProps) {
+  return (
+    <div>
+      <h1>{header}</h1>
+      {description && <p>{description}</p>}
+    </div>
+  );
+}
+
+// Component kedua yang pakai CustomCompFirst
+type CustomCompSecondProps = CustomCompFirstProps & {
+  random?: number;
+};
+
+export function CustomCompSecond({
+  header,
+  description,
+  random,
+}: CustomCompSecondProps) {
+  return (
+    <div>
+      <CustomCompFirst
+        header={header}
+        description={description}
+      />
+      {random !== undefined && <span>Random: {random}</span>}
+    </div>
+  );
+}
+```
+
 ## Jawaban Soal Kedua
 
 **TanStack** adalah sebuah ekosistem _open-source_ yang menyediakan berbagai library untuk React dan framework modern lainnya. Beberapa library populernya antara lain:
