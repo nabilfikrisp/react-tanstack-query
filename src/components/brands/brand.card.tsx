@@ -11,7 +11,7 @@ type BrandCardProps = {
 export function BrandCard({ brand }: BrandCardProps) {
   return (
     <article className="group">
-      <div className="bg-background ring-muted flex h-full flex-col rounded-lg shadow-lg ring-1 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:shadow-black/10">
+      <div className="bg-background ring-muted flex flex-col rounded-lg shadow-lg ring-1 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:shadow-black/10">
         {/* Brand Logo Section */}
         <div className="from-primary/5 to-primary/10 overflow-hidden rounded-t-lg bg-gradient-to-br p-6">
           <div className="flex justify-center">
