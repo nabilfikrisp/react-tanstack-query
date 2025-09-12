@@ -14,6 +14,7 @@ export type FetchBrandsParams = {
   limit?: number;
   sortBy?: BrandSortBy;
   orderBy?: OrderBy;
+  search?: string | null;
 };
 function buildQueryParams(params: FetchBrandsParams) {
   return {
@@ -21,6 +22,7 @@ function buildQueryParams(params: FetchBrandsParams) {
     _limit: params.limit || DEFAULT_LIMIT,
     ...(params.sortBy ? { _sort: params.sortBy } : {}),
     ...(params.orderBy ? { _order: params.orderBy } : {}),
+    ...(params.search ? { name_like: params.search } : {}),
   };
 }
 export async function fetchBrands(params: FetchBrandsParams = {}) {
