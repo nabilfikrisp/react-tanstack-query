@@ -2,7 +2,7 @@ import { AlertTriangle, ArrowLeft, Home, Search } from "lucide-react";
 import { Link } from "react-router";
 import { Button } from "../components/ui/button";
 
-export function NotFoundPage() {
+export default function NotFoundPage() {
   return (
     <div className="mx-auto flex w-full flex-1 flex-col">
       {/* Background gradient */}

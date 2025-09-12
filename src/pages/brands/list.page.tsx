@@ -11,7 +11,7 @@ import { useInfiniteQuery } from "@tanstack/react-query";
 import { parseAsInteger, parseAsStringEnum, useQueryStates } from "nuqs";
 import { useRef } from "react";
 
-export function BrandListPage() {
+export default function BrandListPage() {
   const loadMoreRef = useRef<HTMLDivElement>(null);
 
   const [searchParams] = useQueryStates({

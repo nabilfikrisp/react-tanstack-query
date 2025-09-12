@@ -1,11 +1,13 @@
+import { lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router";
 import { Layout } from "./components/layout";
-import { IndexPage } from "./pages";
-import { BrandDetailPage } from "./pages/brands/detail.page";
-import { BrandListPage } from "./pages/brands/list.page";
-import { NotFoundPage } from "./pages/not-found";
-import { ProductDetailPage } from "./pages/products/detail.page";
-import { ProductListPage } from "./pages/products/list.page";
+
+const IndexPage = lazy(() => import("./pages"));
+const BrandDetailPage = lazy(() => import("./pages/brands/detail.page"));
+const BrandListPage = lazy(() => import("./pages/brands/list.page"));
+const NotFoundPage = lazy(() => import("./pages/not-found"));
+const ProductDetailPage = lazy(() => import("./pages/products/detail.page"));
+const ProductListPage = lazy(() => import("./pages/products/list.page"));
 
 export function Router() {
   return (

@@ -8,7 +8,7 @@ import { useQuery } from "@tanstack/react-query";
 import { ArrowLeftIcon } from "lucide-react";
 import { Link, useParams } from "react-router";
 
-export function ProductDetailPage() {
+export default function ProductDetailPage() {
   const id = useParams().id;
   const { data, error, isLoading } = useQuery(
     productByIdQueryOptions({

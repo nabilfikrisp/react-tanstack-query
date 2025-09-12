@@ -8,7 +8,7 @@ import { useQuery } from "@tanstack/react-query";
 import { ArrowLeftIcon } from "lucide-react";
 import { Link, useParams } from "react-router";
 
-export function BrandDetailPage() {
+export default function BrandDetailPage() {
   const id = useParams().id;
   const { data, error, isLoading } = useQuery(
     brandByIdQueryOptions({

@@ -10,7 +10,7 @@ import {
   Zap,
 } from "lucide-react";
 
-export function IndexPage() {
+export default function IndexPage() {
   return (
     <div className="mx-auto flex w-full flex-1 flex-col">
       {/* Background gradient */}
