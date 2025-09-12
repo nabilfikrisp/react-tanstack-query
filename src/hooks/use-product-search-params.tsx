@@ -2,7 +2,9 @@
 import {
   DEFAULT_LIMIT,
   DEFAULT_PAGE,
-  type ProductOrderBy,
+  ORDER_BY,
+  PRODUCT_SORT,
+  type OrderBy,
   type ProductSortBy,
 } from "@/lib/constants";
 import {
@@ -13,14 +15,11 @@ import {
 } from "nuqs";
 
 export function useProductSearchParams() {
-  const SORTABLE = ["name", "price", "createdAt", "rating"];
-  const ORDERABLE = ["asc", "desc"];
-
   const [searchParams, setSearchParams] = useQueryStates({
     page: parseAsInteger.withDefault(DEFAULT_PAGE),
     limit: parseAsInteger.withDefault(DEFAULT_LIMIT),
-    sortBy: parseAsStringEnum(SORTABLE).withDefault("createdAt"),
-    orderBy: parseAsStringEnum(ORDERABLE).withDefault("desc"),
+    sortBy: parseAsStringEnum(PRODUCT_SORT).withDefault("createdAt"),
+    orderBy: parseAsStringEnum(ORDER_BY).withDefault("desc"),
     onSale: parseAsBoolean,
   });
 
@@ -28,7 +27,7 @@ export function useProductSearchParams() {
     typeof searchParams,
     "orderBy"
   > & {
-    orderBy: ProductOrderBy;
+    orderBy: OrderBy;
     sortBy: ProductSortBy;
   };
 
@@ -38,7 +37,7 @@ export function useProductSearchParams() {
       limit: DEFAULT_LIMIT,
       sortBy: "createdAt",
       orderBy: "desc",
-      onSale: undefined,
+      onSale: null,
     });
   }
 
@@ -46,7 +45,5 @@ export function useProductSearchParams() {
     searchParams: safeSearchParams,
     setSearchParams,
     clear,
-    SORTABLE,
-    ORDERABLE,
   };
 }

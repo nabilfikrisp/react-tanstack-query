@@ -1,5 +1,6 @@
 import { useProductSearchParams } from "@/hooks/use-product-search-params";
 
+import { ORDER_BY, PRODUCT_SORT } from "@/lib/constants";
 import { Button } from "../ui/button";
 import { Label } from "../ui/label";
 import {
@@ -13,8 +14,7 @@ import {
 import { Switch } from "../ui/switch";
 
 export function ProductListFilter() {
-  const { searchParams, setSearchParams, clear, SORTABLE, ORDERABLE } =
-    useProductSearchParams();
+  const { searchParams, setSearchParams, clear } = useProductSearchParams();
 
   function handleClearFilters() {
     clear();
@@ -33,7 +33,7 @@ export function ProductListFilter() {
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
-              {SORTABLE.map((field) => (
+              {PRODUCT_SORT.map((field) => (
                 <SelectItem
                   key={field}
                   value={field}
@@ -57,7 +57,7 @@ export function ProductListFilter() {
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
-              {ORDERABLE.map((field) => (
+              {ORDER_BY.map((field) => (
                 <SelectItem
                   key={field}
                   value={field}

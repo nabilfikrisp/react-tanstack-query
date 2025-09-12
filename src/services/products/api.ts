@@ -2,7 +2,7 @@ import api from "@/configs/axios";
 import {
   DEFAULT_LIMIT,
   DEFAULT_PAGE,
-  type ProductOrderBy,
+  type OrderBy,
   type ProductSortBy,
 } from "@/lib/constants";
 import { extractPagination } from "@/lib/extract-pagination";
@@ -17,7 +17,7 @@ export type FetchProductsParams = {
   page?: number;
   limit?: number;
   sortBy?: ProductSortBy;
-  orderBy?: ProductOrderBy;
+  orderBy?: OrderBy;
   onSale?: boolean | null;
   brandId?: number | null;
 };

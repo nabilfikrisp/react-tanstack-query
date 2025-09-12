@@ -1,5 +1,10 @@
 import api from "@/configs/axios";
-import { DEFAULT_LIMIT, DEFAULT_PAGE } from "@/lib/constants";
+import {
+  DEFAULT_LIMIT,
+  DEFAULT_PAGE,
+  type BrandSortBy,
+  type OrderBy,
+} from "@/lib/constants";
 import { extractPagination } from "@/lib/extract-pagination";
 import { brandSchema, brandsResponseSchema } from "@/schemas/brand.schema";
 
@@ -7,8 +12,8 @@ import { brandSchema, brandsResponseSchema } from "@/schemas/brand.schema";
 export type FetchBrandsParams = {
   page?: number;
   limit?: number;
-  sortBy?: "name" | "country" | "founded" | "createdAt";
-  orderBy?: "asc" | "desc";
+  sortBy?: BrandSortBy;
+  orderBy?: OrderBy;
 };
 function buildQueryParams(params: FetchBrandsParams) {
   return {
