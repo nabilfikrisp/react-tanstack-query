@@ -3,6 +3,7 @@ import { Layout } from "./components/layout";
 import { IndexPage } from "./pages";
 import { BrandDetailPage } from "./pages/brands/detail.page";
 import { BrandListPage } from "./pages/brands/list.page";
+import { NotFoundPage } from "./pages/not-found";
 import { ProductDetailPage } from "./pages/products/detail.page";
 import { ProductListPage } from "./pages/products/list.page";
 
@@ -37,7 +38,7 @@ export function Router() {
           </Route>
           <Route
             path="*"
-            element={<div>404 Not Found</div>}
+            element={<NotFoundPage />}
           />
         </Route>
       </Routes>
