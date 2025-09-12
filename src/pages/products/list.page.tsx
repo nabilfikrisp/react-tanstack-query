@@ -1,6 +1,6 @@
 import { ProductListFilter } from "@/components/products/product-list-filter";
-import { ProductListSearch } from "@/components/products/product-list-search";
 import { ProductListState } from "@/components/products/product-list.state";
+import { SearchFilter } from "@/components/search-filter";
 
 export default function ProductListPage() {
   return (
@@ -9,7 +9,7 @@ export default function ProductListPage() {
         <ProductListFilter />
       </aside>
       <div className="flex flex-1 flex-col gap-4">
-        <ProductListSearch />
+        <SearchFilter />
         <ProductListState />
       </div>
     </section>

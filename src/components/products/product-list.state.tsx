@@ -7,12 +7,14 @@ import { useProductSearchParams } from "@/hooks/use-product-search-params";
 import { errorParser } from "@/lib/error-parser";
 import { productsInfiniteQueryOptions } from "@/services/products/queries";
 import { useInfiniteQuery } from "@tanstack/react-query";
+import { useQueryState } from "nuqs";
 import { useRef } from "react";
 
 export function ProductListState() {
   const loadMoreRef = useRef<HTMLDivElement>(null);
 
   const { searchParams } = useProductSearchParams();
+  const [searchQuery] = useQueryState("search");
 
   const {
     data,
@@ -29,7 +31,7 @@ export function ProductListState() {
         orderBy: searchParams.orderBy,
         sortBy: searchParams.sortBy,
         onSale: searchParams.onSale,
-        search: searchParams.search,
+        search: searchQuery,
       },
     }),
   );
