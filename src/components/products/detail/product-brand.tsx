@@ -1,3 +1,4 @@
+import { usePrefetch } from "@/hooks/use-prefetch";
 import type { Brand } from "@/schemas/brand.schema";
 import { Link } from "react-router";
 
@@ -18,6 +19,7 @@ export function ProductBrand({
   founded,
   description,
 }: ProductBrandProps) {
+  const { prefetchBrandById } = usePrefetch();
   return (
     <div className="flex flex-col gap-4">
       <h2 className="text-foreground text-2xl font-medium">Brand</h2>
@@ -29,7 +31,12 @@ export function ProductBrand({
         />
         <div className="space-y-1">
           <h3 className="text-foreground hover:text-primary font-medium hover:underline">
-            <Link to={`/brands/${id}`}>{name}</Link>
+            <Link
+              to={`/brands/${id}`}
+              onMouseEnter={() => prefetchBrandById(id)}
+            >
+              {name}
+            </Link>
           </h3>
           <p className="text-muted-foreground text-sm">
             {country} • Est. {founded}

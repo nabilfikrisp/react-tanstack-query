@@ -1,3 +1,4 @@
+import { usePrefetch } from "@/hooks/use-prefetch";
 import type { Brand } from "@/schemas/brand.schema";
 import { format } from "date-fns";
 import { Building2, Calendar, MapPin } from "lucide-react";
@@ -9,6 +10,7 @@ type BrandCardProps = {
 };
 
 export function BrandCard({ brand }: BrandCardProps) {
+  const { prefetchBrandById } = usePrefetch();
   return (
     <article className="group">
       <div className="bg-background ring-muted flex flex-col rounded-lg shadow-lg ring-1 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:shadow-black/10">
@@ -72,7 +74,12 @@ export function BrandCard({ brand }: BrandCardProps) {
             className="bg-primary/10 hover:bg-primary hover:text-primary-foreground text-primary w-full rounded-lg px-4 py-2 font-medium transition-all duration-200"
             asChild
           >
-            <Link to={`/brands/${brand.id}`}> View Products</Link>
+            <Link
+              to={`/brands/${brand.id}`}
+              onMouseEnter={() => prefetchBrandById(brand.id)}
+            >
+              View Products
+            </Link>
           </Button>
         </div>
       </div>

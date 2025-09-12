@@ -48,6 +48,8 @@ export function productsInfiniteQueryOptions({
     limit: DEFAULT_LIMIT,
     sortBy: "createdAt",
     orderBy: "desc",
+    search: null,
+    onSale: null,
   };
   const finalParams = options?.default ? defaultParams : params;
 

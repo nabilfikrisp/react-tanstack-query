@@ -36,7 +36,14 @@ export function usePrefetch() {
   }
 
   async function prefetchBrandById(id: number) {
-    await queryClient.prefetchQuery(brandByIdQueryOptions({ id }));
+    await Promise.all([
+      queryClient.prefetchInfiniteQuery(
+        productsInfiniteQueryOptions({
+          params: { brandId: id, limit: 3 },
+        }),
+      ),
+      queryClient.prefetchQuery(brandByIdQueryOptions({ id })),
+    ]);
   }
 
   return {

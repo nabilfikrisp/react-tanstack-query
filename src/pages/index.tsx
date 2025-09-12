@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import { Button } from "../components/ui/button";
 
+import { usePrefetch } from "@/hooks/use-prefetch";
 import {
   ArrowRight,
   Package,
@@ -11,6 +12,7 @@ import {
 } from "lucide-react";
 
 export default function IndexPage() {
+  const { prefetchInfiniteProducts, prefetchInfiniteBrands } = usePrefetch();
   return (
     <div className="mx-auto flex w-full flex-1 flex-col">
       {/* Background gradient */}
@@ -48,7 +50,10 @@ export default function IndexPage() {
             </p>
 
             <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-              <Link to="/products">
+              <Link
+                to="/products"
+                onMouseEnter={prefetchInfiniteProducts}
+              >
                 <Button
                   size="lg"
                   className="group px-8 py-4 text-lg shadow-lg transition-all duration-300 hover:shadow-xl"
@@ -58,7 +63,10 @@ export default function IndexPage() {
                 </Button>
               </Link>
 
-              <Link to="/brands">
+              <Link
+                to="/brands"
+                onMouseEnter={prefetchInfiniteBrands}
+              >
                 <Button
                   size="lg"
                   variant="outline"
@@ -87,7 +95,10 @@ export default function IndexPage() {
             match your style and needs
           </p>
 
-          <Link to="/products">
+          <Link
+            to="/products"
+            onMouseEnter={prefetchInfiniteProducts}
+          >
             <Button
               size="lg"
               variant="outline"

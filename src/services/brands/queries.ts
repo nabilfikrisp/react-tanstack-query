@@ -42,6 +42,7 @@ export function brandsInfiniteQueryOptions({
     limit: DEFAULT_LIMIT,
     sortBy: "createdAt",
     orderBy: "desc",
+    search: null,
   };
   const finalParams = options?.default ? defaultParams : params;
 
